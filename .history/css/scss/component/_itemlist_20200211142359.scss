@@ -1,0 +1,188 @@
+.list_info_bar01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $layout-base-padding 0;
+
+    .list_num {
+        font-size: $mid-font-size;
+        color: $base-font-color;
+
+        .num {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+    .list_order {
+        font-size: $mid-font-size;
+        color: $base-font-color;
+        
+        .icon {
+            width: 1.1em;
+            vertical-align: middle;
+        }
+    }
+}
+
+.item_list01 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .item_box {
+        width: calc(50% - 4px);
+        margin-bottom: $layout-base-padding;
+    }
+    .item_thum {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom: $layout-small-padding;
+        border-radius: $base-border-radius;
+        overflow: hidden;
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .item_shop {
+        font-size: $small-font-size;
+        color: $light-font-color;
+        margin-bottom: $layout-small-padding;
+    }
+    .item_name {
+        font-size: $base-font-size;
+        color: $bold-font-color;
+        @include multi-line-ellipsis ($base-line-height, 2);
+    }
+    .item_price {
+        margin-top: $layout-small-padding;
+        font-size: $title-font-size;
+        font-weight: bold;
+        color: $bold-font-color;
+    }
+}
+
+.item_list02 {
+    padding: 0 $layout-base-padding;
+
+    .item_box a {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .item_box:not(:first-child) a {
+        margin-top: $layout-small-padding;
+    }
+    .item_thum {
+        width: 104px;
+        height: 104px;
+        flex-shrink: 0;
+        border-radius: $base-border-radius;
+        overflow: hidden;
+
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .item_txt_box {
+        flex-shrink: 1;
+        padding-left: $layout-small-padding;
+    }
+    .item_shop {
+        font-size: $small-font-size;
+        color: $light-font-color;
+        margin-bottom: $layout-small-padding;
+    }
+    .item_name {
+        font-size: $base-font-size;
+        color: $bold-font-color;
+        @include multi-line-ellipsis ($base-line-height, 2);
+    }
+    .item_price {
+        font-size: $title-font-size;
+        font-weight: bold;
+        color: $bold-font-color;
+    }
+    .best_num {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $layout-large-padding;
+        height: $layout-large-padding;
+        background-color: rgba($main-color,0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gray-0;
+        font-size: $mid-font-size;
+        font-weight: bold;
+        border-top-left-radius: $base-border-radius;
+        border-bottom-right-radius: $base-border-radius;
+    }
+}
+
+.item_list03 {
+    padding: 0 $layout-base-padding;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item_box {
+        width: calc(33.3333% - 5.0333px);
+    }
+    .item_box:not(:nth-child(-n+3)){
+        margin-top: $layout-large-padding;
+    }
+    .item_thum {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom: $layout-small-padding / 2;
+        border-radius: $base-border-radius;
+        @include thumnail;
+    }
+    .item_shop {
+        font-size: $small-font-size;
+        color: $light-font-color;
+        margin: $layout-small-padding 0;
+    }
+    .item_name {
+        font-size: $mid-font-size;
+        color: $bold-font-color;
+        @include multi-line-ellipsis ($base-line-height, 3);
+    }
+    .item_price {
+        margin-top: $layout-small-padding;
+        font-size: $title-font-size;
+        font-weight: bold;
+        color: $bold-font-color;
+    }
+}
+
+.item_list04 {
+
+    .item_box {
+        width: fit-content;
+    }
+    .item_thum {
+        width: 28.8889vw;
+        height: 28.8889vw;
+        margin: 0 4px $layout-small-padding / 2;
+        border-radius: $base-border-radius;
+        
+        @include thumnail;
+    }
+    .hash {
+        font-size: $mid-font-size;
+        color: $bold-font-color;
+    }
+}

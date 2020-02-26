@@ -1,0 +1,30 @@
+.swiper-pagination {
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 $layout-small-padding;
+}
+
+.pagination_main {
+    
+    .swiper-pagination-bullet-active {
+        background-color: $main-color;
+    }
+}
+.swiper-pagination {font-size: 0;}
+
+.itmes_container.swiper-wrapper {
+    padding: 0 $layout-base-padding;
+
+    .item_list01 {
+        opacity: 0.8;
+        transition: opacity .2s;
+    }
+    .swiper-slide-active {
+        opacity: 1;
+    }
+}

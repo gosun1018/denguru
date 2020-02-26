@@ -1,0 +1,11 @@
+{
+  "name": "denguru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass --watch css/scss/main.scss css/main.css"
+  },
+  "author": "eunseon",
+  "license": "ISC"
+}

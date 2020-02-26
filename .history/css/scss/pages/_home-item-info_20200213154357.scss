@@ -1,0 +1,63 @@
+.shop_shortcut_box {
+    position: fixed;
+    bottom: $layout-base-padding;
+    width: 100%;
+    text-align: center;
+    
+    .btn {
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+}
+.shop_item_info_container {
+    padding: $layout-large-padding $layout-base-padding;
+    background-color: $gray-0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+
+    .shop_item_info_box {
+        display: flex;
+        align-items: center;
+    }
+    .shop_item_thum {
+        width: 126px;
+        height: 126px;
+        border-radius: $base-border-radius;
+        margin-right: $layout-small-padding;
+        @include thumnail;
+    }
+    .shop_item_info_txt_box {
+        flex: 1;
+        position: relative;
+    }
+    .item_name,
+    .item_discount,
+    .item_price {
+        display: block;
+    }
+    .item_name {
+        font-size: $base-font-size;
+        color: $bold-font-color;
+        @include multi-line-ellipsis($base-line-height,2);
+        height: auto;
+        max-height: $base-line-height * 2;
+    }
+    .item_discount {
+        font-size: $base-font-size;
+        color: $accent-font-color;
+        font-weight: bold;
+    }
+    .item_price {
+        font-size: $title-font-size;
+        color: $bold-font-color;
+    }
+    .item_before_origin_price {
+        font-size: $base-font-size;
+        color: $light-font-color;
+        text-decoration: line-through;
+        text-decoration-color: $x-light-font-color;
+    }
+    .item_bookmark_box {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

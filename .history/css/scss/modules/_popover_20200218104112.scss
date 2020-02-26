@@ -1,0 +1,31 @@
+.popover_container {
+    position: relative;
+}
+.popover {
+    position: absolute;
+    padding: 8px 5px;
+    border-radius: $base-border-radius;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 5px;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+    }
+}
+.popover_main {
+    background-color: $main-color;
+    color: $gray-0;
+}
+.popover_right_top{
+    top: 100%;
+    right: 0;  
+
+    &:before {
+        border-bottom-color: $main-color;
+    }
+}

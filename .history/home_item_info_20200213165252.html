@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU :: 제품 정보</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">
+                <span class="img_box img_shop_box">
+                    <img src="http://placehold.it/28x28" alt="썸네일" class="img">
+                </span>
+                <span class="shop_name">
+                    바잇미
+                </span>
+                <img src="images/icon-shop.svg" alt="샵 아이콘" class="icon icon_shop">
+            </h1>
+            <a href="search.html" class="btn_goback h_btn_icon"><img src="images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+            <button class="btn_linkstyle h_btn_icon btn_bookmark"><img src="images/icon-bookmark.svg" alt="즐겨찾기 등록" class="icon"></button>
+        </header>
+        <div class="shop_shortcut_box">
+            <a href="" class="btn btn_main btn_big btn_big_round">쇼핑몰 바로가기</a>
+        </div>
+        <div class="main">
+            <!--  -->
+            <section class="shop_item_info_container">
+                <h2 class="blind">상품정보</h2>
+                <div class="shop_item_info_box">
+                    <a href="" class="shop_item_thum img_box"><img src="http://placehold.it/126x126" alt="" class="img"></a>
+                    <div class="shop_item_info_txt_box">
+                        <a href="" class="item_name">노즈워크 삑삑이 대장</a>
+                        <a href="" class="item_discount">29%</a>
+                        <a href="" class="item_price">
+                            9,900
+                            <span class="item_before_origin_price">14,000</span>
+                        </a>
+
+                        <div class="item_bookmark_box">
+                            <button class="btn btn_linkstyle btn_item_bookmark"><img src="images/icon-heart-o.svg" alt="" class="icon"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <section class="review_item_stars_contianer">
+                <div class="title04">
+                    <h2 class="tit">
+                        리뷰
+                        <span class="tit_sub01">146</span>
+                    </h2>
+                    <a href="" class="btn btn_linkstyle">
+                        <img src="images/icon-angle-right-gray.svg" alt="리뷰더보기" class="icon">
+                    </a>
+                </div>
+                <div class="review_item_stars_title">
+                    <span class="blind">제품리뷰 별점</span>
+                    <span class="score">4.25</span>
+                    <span class="stars">
+                        <img src="images/icon-star.svg" alt="별" class="star">
+                        <img src="images/icon-star.svg" alt="별" class="star">
+                        <img src="images/icon-star.svg" alt="별" class="star">
+                        <img src="images/icon-star.svg" alt="별" class="star">
+                        <img src="images/icon-star-o.svg" alt="별" class="star">
+                    </span>
+                </div>
+                <div class="review_list02">
+                    <div class="review_img_container swiper-container">
+                        <ul class="review_img_list swiper-wrapper">
+                            <li class="review_img_box swiper-slide">
+                                <a href="" class="img_box"><img src="http://placehold.it/100x100" alt="리뷰이미지" class="img"></a>
+                            </li>
+                            <li class="review_img_box swiper-slide">
+                                <a href="" class="img_box"><img src="http://placehold.it/100x100" alt="리뷰이미지" class="img"></a>
+                            </li>
+                            <li class="review_img_box swiper-slide">
+                                <a href="" class="img_box"><img src="http://placehold.it/100x100" alt="리뷰이미지" class="img"></a>
+                            </li>
+                            <li class="review_img_box swiper-slide">
+                                <a href="" class="img_box"><img src="http://placehold.it/100x100" alt="리뷰이미지" class="img"></a>
+                            </li>
+                            <li class="review_img_box swiper-slide">
+                                <a href="" class="img_box"><img src="http://placehold.it/100x100" alt="리뷰이미지" class="img"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <section class="bubble_graph_container">
+                <div class="title04">
+                    <h2 class="tit">DENGURU AI 키워드 추천</h2>
+                </div>
+                <div class="keyword_bubble_graph_box">
+                    <div class="img_box"><img src="images/bubble_ex.png" alt="키워드 그래프" class="img"></div>
+                    <div class="bubble_keyword_txt_box">
+                        이상품은 <em class="keyword">노즈워크, 전연령층, 말티즈</em>가 즐겨찾아요!
+                    </div>
+                </div>
+            </section>
+            <div class="pd_gnb_bottom"></div>
+        </div>
+    </div>
+    <script>
+        //addPadding
+        function addPadding(){
+            var elShopItemInfoContainer = document.querySelector('.shop_item_info_container');
+            var elReviewItemStarContainer = document.querySelector('.review_item_stars_contianer');
+            var containerPadding = elShopItemInfoContainer.clientHeight + 61;
+
+            elReviewItemStarContainer.style.marginTop = containerPadding + 'px';
+        }
+        addPadding();
+        window.addEventListener('resize',function(){
+            addPadding();
+        });
+
+        //
+        var swiper = new Swiper('.review_img_container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.resister_pet_form_wrap {
+    background-color: $gray-0;
+}
+
+.pet_profile01 {
+    padding: $layout-base-padding*2 $layout-base-padding 0;
+    border-bottom: $light-border;
+
+    .profile_img {
+        position: relative;
+        @include circle(160px); 
+        overflow: hidden;  
+        margin: 0 auto;
+    }
+    .profile_img.has_img {
+        .img_box:after {
+            content: '';
+            display: block;
+            @include circle(100%); 
+        }
+    }
+    .inp_profile_box {
+        width: 100%;
+        position: absolute;
+        top: 38%;
+        left: 0;
+        text-align: center;
+
+        .lab {
+            display: block;
+            margin-bottom: $layout-small-padding;
+            font-size: $small-font-size;
+            
+            .icon {
+                width: 1.2em;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.pet_profile02 {
+    padding: 0 $layout-base-padding;
+    border-bottom: $light-border;
+
+    .btn_more_box {
+        text-align: right;
+    }
+    .link_more {
+        color: $main-font-color;
+        font-size: $base-font-size;
+    }
+}
+.breed_container {
+    margin-top: $layout-base-padding;
+    padding-bottom: $layout-base-padding;
+
+    .breed_item {
+        position: relative;
+        overflow: hidden;
+        border-radius: $base-border-radius;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+
+        &.selected:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            border-radius: $base-border-radius;
+            border: $main-border;
+        }
+    }
+    .txt_box {
+        padding: $layout-small-padding;
+    }
+    .breed_ko {
+        font-size: $base-font-size;
+        color: $bold-font-color;
+        margin-bottom: $layout-small-padding;
+        @include one-line-ellipsis;
+    }
+    .breed_en {
+        font-size: $small-font-size;
+        color: $light-font-color;
+        margin-bottom: $layout-small-padding;
+        @include one-line-ellipsis;
+    }
+}
+.allergy_container {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+.btn_trash {
+    width: 24px;
+    height: 24px;
+}
+.submit_box {
+    padding: 0 $layout-base-padding $layout-large-padding;
+
+    .btn_box {
+        align-items: center;
+    }
+}

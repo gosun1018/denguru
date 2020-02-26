@@ -1,0 +1,37 @@
+.popover_container {
+    position: relative;
+}
+.popover {
+    position: absolute;
+    padding: 8px;
+    border-radius: $base-border-radius;
+    word-break: keep-all;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+    }
+}
+.popover_main {
+    background-color: $main-color;
+    color: $gray-0;
+    
+    &.popover_right_top:before {
+        border-bottom-color: $main-color;
+    }
+}
+.popover_right_top{
+    top: calc(100% + 5px);
+    right: -3px;  
+
+    &:before {
+        top: -10px;
+        right: 5px;
+    }
+}

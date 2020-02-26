@@ -1,0 +1,124 @@
+.main_profile {
+    position: relative;
+    width: 100%;
+    padding-top: 24.4444%;
+    background-color: $gray-0;
+    background-image: url(../images/bg-profile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+
+    &.swiper-container{
+        padding-bottom: 26px;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        @include circle(29.4444vw);
+        max-width: 212px;
+        max-height: 212px;
+        background-color: $main-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile_img {
+        @include circle(29.4444vw);
+        max-width: 212px;
+        max-height: 212px;
+        box-sizing: border-box;
+        margin: 0 auto $layout-base-padding;
+        border: 5px solid $main-color;
+        overflow: hidden;
+        background-color: $main-color;
+
+        .img {
+            width: 100%;
+        }
+    }
+    .profile_name {
+        margin: $layout-base-padding 0;
+        text-align: center;
+        font-size: $title-font-size;
+        font-weight: bold;
+    }
+    .profile_tag_list {
+        padding: 0 $layout-base-padding*2;
+        text-align: center;
+        font-size: 0;
+    }
+    .profile_btn,
+    .profile_tag {
+        display: inline-block;
+        font-size: $base-font-size;
+        border-radius: $layout-base-padding;
+        margin: 0 $layout-small-padding/2 $layout-small-padding;
+        vertical-align: middle;
+        line-height: $layout-base-padding * 2;
+    }
+    .profile_tag {
+        padding: 0 $layout-base-padding;
+        background-color: $main-color;
+        color: $gray-0;
+    }
+    .profile_btn {
+        border: $main-border;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+
+        .icon {
+            width: $base-font-size;
+        }
+    }
+    .resister_btn_box {
+        margin: $layout-base-padding $layout-base-padding 0;
+    }
+    .profile_message {
+        text-align: center;
+        line-height: 1.6;
+
+    }
+    .btn_add {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 39.1666vw;
+        right: 0;
+        width: 26.3888%;
+        margin: 0 $layout-base-padding;
+        line-height: $layout-base-padding * 2.5;
+        text-align: center;
+        font-size: $base-font-size;
+        color: $main-font-color;
+        
+        .icon {
+            height: $base-font-size;
+            vertical-align: text-top;
+        }
+    }
+    .pagination_main {
+        bottom: 0;
+        font-size: 0;
+    }
+
+    + .sect01,
+    + .sect02 {
+        margin-top: 0;
+    }
+}
+
+.sect_recommand_ai {
+
+    .title01 {
+        margin-bottom: $layout-small-padding;
+    }
+    .list_info_bar01 {
+        margin: $layout-base-padding;
+    }
+}
+.hash_list_container {
+    margin-bottom: $layout-base-padding;
+}
