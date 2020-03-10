@@ -1,8 +1,8 @@
 .swiper-pagination {
 
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
     }
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -10,7 +10,10 @@
 }
 
 .pagination_main {
-    
+    .swiper-pagination-bullet {
+        background-color: #b8b3c3;
+        opacity: 1;
+    }
     .swiper-pagination-bullet-active {
         background-color: $main-color;
     }

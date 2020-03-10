@@ -1,7 +1,7 @@
 .main_profile {
     position: relative;
     width: 100%;
-    padding-top: 24.4444%;
+    padding-top: 4.03%;
     background-color: $gray-0;
     background-image: url(../images/bg-profile.png);
     background-repeat: no-repeat;
@@ -9,30 +9,16 @@
     background-position: center top;
 
     &.swiper-container{
-        padding-bottom: 26px;
+        padding-bottom: 36px;
     }
-
-    &:before {
-        content: '';
-        display: block;
-        @include circle(29.4444vw);
-        max-width: 212px;
-        max-height: 212px;
-        background-color: $main-color;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .profile_img {
-        @include circle(29.4444vw);
-        max-width: 212px;
-        max-height: 212px;
+        @include circle(33.3333vw);
+        max-width: 240px;
+        max-height: 240px;
         box-sizing: border-box;
         margin: 0 auto $layout-base-padding;
-        border: 5px solid $main-color;
         overflow: hidden;
-        background-color: $main-color;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
 
         .img {
             width: 100%;
@@ -49,59 +35,73 @@
         text-align: center;
         font-size: 0;
     }
-    .profile_btn,
     .profile_tag {
         display: inline-block;
-        font-size: $base-font-size;
-        border-radius: $layout-base-padding;
+        font-size: $mid-font-size;
+        border-radius: $large-border-radius;
         margin: 0 $layout-small-padding/2 $layout-small-padding;
         vertical-align: middle;
-        line-height: $layout-base-padding * 2;
+        height: 26px;
+        line-height: 26px;
     }
     .profile_tag {
-        padding: 0 $layout-base-padding;
-        background-color: $main-color;
-        color: $gray-0;
-    }
-    .profile_btn {
-        border: $main-border;
-        width: 30px;
-        height: 30px;
-        box-sizing: border-box;
-
-        .icon {
-            width: $base-font-size;
-        }
+        padding: 0 13px;
+        background-color: $bg-gray-color;
+        color: $base-font-color;
     }
     .resister_btn_box {
         margin: $layout-base-padding $layout-base-padding 0;
-    }
-    .profile_message {
         text-align: center;
-        line-height: 1.6;
+    }
+    .profile_message01 {
+        font-size: 17px;
+        font-weight: 900;
+        text-align: center;
+        line-height: $base-line-height;
+        color: $bold-font-color;
 
+        .emph {
+            color: $main-font-color;
+        }
+    }
+    .profile_message02 {
+        margin-top: 12px;
+        font-size: $mid-font-size;
+        text-align: center;
+        color: $x-light-font-color;
+    }
+    .btn_modify_pet {
+        position: absolute;
+        top: 23.4722vw;
+        left: calc(50% + 9vw);
+        width: 34px;
+
+        .img {
+            width: 100%;
+        }
     }
     .btn_add {
         display: block;
         position: absolute;
         z-index: 100;
-        top: 39.1666vw;
+        bottom: 0;
         right: 0;
-        width: 26.3888%;
         margin: 0 $layout-base-padding;
-        line-height: $layout-base-padding * 2.5;
         text-align: center;
         font-size: $base-font-size;
-        color: $main-font-color;
+        color: $accent-font-color;
         
         .icon {
-            height: $base-font-size;
-            vertical-align: text-top;
+            height: 24px;
+            vertical-align: middle;
+            margin-left: 4px;
         }
     }
     .pagination_main {
-        bottom: 0;
+        bottom: 8px;
         font-size: 0;
+        text-align: left;
+        padding: 0 $layout-base-padding;
     }
 
     + .sect01,

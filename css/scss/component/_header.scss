@@ -32,11 +32,11 @@
     .h_search_box {
         margin-left: auto;
         flex: 1;
-        max-width: 66%;
         height: $layout-base-padding * 2.25;
         padding: 8px;
         box-sizing: border-box;
-        background-color: $bg-gray-color;
+        border: 1px solid #d1cddb;
+        background-color: #fbfbfb;//$bg-gray-color;
         border-radius: $base-border-radius;
 
         a {

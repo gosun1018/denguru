@@ -6,6 +6,8 @@
     @include layout-frame;
     background-color: $gray-0;
     box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba($main-color,0.13);
     // border-top: $light-border;
 
     .gnb_list {
@@ -38,13 +40,14 @@
         &:before {
             content: '';
             display: block;
-            width: 24px;
+            width: 20vw;
+            max-width: 144px;
             height: 2px;
             background-color: $main-color;
             position: absolute;
-            top: -16px;
+            bottom: -16px;
             left: 50%;
-            margin-left: -12px;
+            transform: translateX(-50%);
         }
     }
 }
