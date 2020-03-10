@@ -2287,7 +2287,8 @@ select::-ms-expand {
   padding: 0 16px;
   border-bottom: 1px solid #dbdbdb; }
   .pet_profile02 .btn_more_box {
-    text-align: right; }
+    text-align: right;
+    margin-top: 4px; }
   .pet_profile02 .link_more {
     color: #5f4899;
     font-size: 14px; }
