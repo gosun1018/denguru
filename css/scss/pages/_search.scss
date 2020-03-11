@@ -13,7 +13,7 @@
         color: $base-font-color;
 
         .emph {
-            color: $main-bold-font-color;
+            color: $main-font-color;
         }
     }
     .btn_del {
@@ -77,11 +77,14 @@
     border-bottom: $light-border;
 
     .filter_info {
-        height: 100%;
-        line-height: $layout-base-padding*3;
+        // height: 100%;
+        // line-height: $layout-base-padding*3;
         font-size: $mid-font-size;
         padding-left: $layout-base-padding;
-        
+        @include multi-line-ellipsis($base-line-height,2);
+        height: auto;
+        max-height: $base-line-height * 2em;
+
         .icon {
             width: 1.1em;
             vertical-align: middle;
@@ -108,8 +111,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 66%;
-    min-height: 398px;
+    height: 57.42%;
+    min-height: 368px;
     bottom: -100%;
     left: 0;
     background-color: $gray-0;
@@ -117,23 +120,55 @@
     box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
     transition: bottom 0.4s ease-in;
 
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 58px;
+        border-radius: 3px;
+        background-color: #e5e5e5;
+    }
+
     &.show {
         bottom: 0;
     }
 
     .popup_top_bar {
-        height: 65px;
+        // height: 65px;
         box-sizing: border-box;
-        padding: $layout-large-padding $layout-base-padding;
+        padding: $layout-base-padding*2 $layout-base-padding 20px 0;
+        text-align: center;
+        font-size: 0;
 
         .btn_tab {
-            margin-right: $layout-small-padding;
+            // padding: 0 $layout-small-padding;
+            position: relative;
+            width: 70px;
             font-size: $large-font-size;
-            color: $light-font-color;
+            color: $x-light-font-color;
+        }
+        .btn_tab:not(:last-child){
+            padding-right: 2px;
+
+                &:after {
+                content:'';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 11px;
+                background-color: #e6e4eb;
+            }
         }
         .btn_tab.active {
             color: $main-font-color;
-            font-weight: bold;
+            font-weight: 900;
         }
     }
     .popup_main {
@@ -169,13 +204,20 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 $layout-base-padding;
-        margin-bottom: $layout-large-padding;
+        // margin-bottom: $layout-large-padding;
     }
     .price_range_txt {
+        text-align: center;
         font-size: 20px;
+        color: $main-font-color;
     }
     .price {
         font-weight: 900;
+    }
+    .btn_filter_info_box {
+        position: absolute;
+        top: $layout-base-padding * 2;
+        right: $layout-base-padding;
     }
     .btn_filter_info {
         font-size: 0;

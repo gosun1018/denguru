@@ -134,7 +134,8 @@
     .h_search_box {
         margin-left: $layout-small-padding;
         flex: 1;
-        background-color: $bg-gray-color;
+        border: 1px solid #d1cddb;
+        background-color: #fbfbfb;
         border-radius: $base-border-radius;
         height: $layout-base-padding * 2.25;
         font-size: $large-font-size;

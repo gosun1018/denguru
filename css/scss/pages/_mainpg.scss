@@ -43,8 +43,6 @@
         vertical-align: middle;
         height: 26px;
         line-height: 26px;
-    }
-    .profile_tag {
         padding: 0 13px;
         background-color: $bg-gray-color;
         color: $base-font-color;
@@ -74,7 +72,8 @@
         position: absolute;
         top: 23.4722vw;
         left: calc(50% + 9vw);
-        width: 34px;
+        width: 9.4444vw;
+        max-width: 68px;
 
         .img {
             width: 100%;
@@ -107,6 +106,13 @@
     + .sect01,
     + .sect02 {
         margin-top: 0;
+    }
+
+    @media screen and (min-width: 721px) {
+        .btn_modify_pet {
+            top: 169px;
+            left: 425px;
+        }
     }
 }
 
