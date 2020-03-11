@@ -303,3 +303,37 @@
 .pd_header04 {
     padding-top: $header-height04;
 }
+.header05 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    @include layout-frame;
+    height: $header-height05;
+    padding: 0 $layout-base-padding;
+    box-sizing: border-box;
+    border-bottom: $light-border;
+    background-color: $gray-0;
+
+    .btn_close {
+        order: 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: $layout-base-padding;
+
+        .icon {
+            width: 100%;
+        }
+    }
+    .h_title {
+        order: 1;
+        font-size: $large-font-size;
+        font-weight: bold;
+        color: $base-font-color;
+    }
+}
+.pd_header05 {
+    padding-top: $header-height05;
+}
