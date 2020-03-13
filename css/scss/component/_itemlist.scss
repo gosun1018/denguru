@@ -71,6 +71,18 @@
         font-weight: bold;
         color: $bold-font-color;
     }
+    .item_price_before {
+        margin-top: 4px;
+        height: 1em;
+        font-size: $small-font-size;
+        font-weight: normal;
+        color: $x-light-font-color;
+        text-decoration: line-through;
+    }
+    .rate_discount {
+        font-size: $mid-font-size;
+        color: $accent-font-color;
+    }
 }
 
 .item_list02 {
@@ -118,6 +130,16 @@
         font-size: $large-font-size;
         font-weight: bold;
         color: $bold-font-color;
+    }
+    .item_price_before {
+        font-size: $small-font-size;
+        font-weight: normal;
+        color: $x-light-font-color;
+        text-decoration: line-through;
+    }
+    .rate_discount {
+        font-size: $mid-font-size;
+        color: $accent-font-color;
     }
     .best_num {
         position: absolute;
@@ -176,6 +198,17 @@
         font-weight: bold;
         color: $bold-font-color;
     }
+    .item_price_before {
+        margin-top: 4px;
+        font-size: $small-font-size;
+        font-weight: normal;
+        color: $x-light-font-color;
+        text-decoration: line-through;
+    }
+    .rate_discount {
+        font-size: $mid-font-size;
+        color: $accent-font-color;
+    }
 }
 
 .item_list04 {
@@ -208,5 +241,25 @@
     .hash {
         font-size: $mid-font-size;
         color: $bold-font-color;
+    }
+}
+@media screen and (max-width: 359px) {
+    .item_list01 .rate_discount {
+        font-size: $small-font-size;
+    }
+    .item_list02 .rate_discount {
+        font-size: $small-font-size;
+    }
+    .item_list03 .rate_discount {
+        font-size: $small-font-size;
+    }
+    .item_list01 .item_price {
+        font-size: $base-font-size;
+    }
+    .item_list02 .item_price {
+        font-size: $base-font-size;
+    }
+    .item_list03 .item_price {
+        font-size: $base-font-size;
     }
 }

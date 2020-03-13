@@ -62,9 +62,9 @@ select::-ms-expand {
         color: $base-font-color;
     }
     .inp_radio:checked + .lab_radio {
-        background-color: lighten($secondary-color, 5%);
-        border-color: $secondary-color;
-        color: $bold-font-color;
+        background-color: lighten($accent-color, 6%);
+        border-color: $accent-color;
+        color: $gray-0;
         font-weight: bold;
     }
     .inp_check_box {
@@ -162,8 +162,8 @@ select::-ms-expand {
         color: $light-font-color;
     }
     .inp_check_table:checked + .lab_check_table {
-        background-color: lighten($secondary-color, 5%);
-        color: $bold-font-color;
+        background-color: lighten($accent-color, 6%);
+        color: $gray-0;
 
         &::before{
             content: '';
@@ -173,7 +173,7 @@ select::-ms-expand {
             height: 100%;
             top: -1px;
             left: -1px;
-            border: $secondary-border;
+            border: $accent-border;
         }
     }
 }
