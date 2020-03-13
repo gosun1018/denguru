@@ -45,7 +45,7 @@
             align-items: center;
         }
         .icon_box {
-            width: $layout-base-padding * 1.25;
+            width: 20px;
             font-size: 0;
         }
         .icon {
@@ -151,8 +151,8 @@
         }
 
         .lab_search {
-            width: 1.4em;
-            height: 1.4em;
+            width: 20px;
+            height: 20px;
         }
         .inp_search {
             margin-left: $layout-small-padding;
@@ -298,6 +298,10 @@
     .btn_bookmark{
         order: 2;
         margin-left: auto;
+
+        .icon {
+            height: 100%;
+        }
     }
 }
 .pd_header04 {

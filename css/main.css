@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@keyframes width-0-to-100 {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,6 +170,8 @@ body {
   font-size: 18px;
   font-weight: 900;
   color: #141414; }
+  .title03 .emph {
+    color: #7953d0; }
 
 .title04 {
   display: flex;
@@ -921,8 +929,8 @@ select::-ms-expand {
       width: 100%;
       height: 100%; }
     .header02 .h_search_box .lab_search {
-      width: 1.4em;
-      height: 1.4em; }
+      width: 20px;
+      height: 20px; }
     .header02 .h_search_box .inp_search {
       margin-left: 8px;
       flex: 1;
@@ -1057,6 +1065,8 @@ select::-ms-expand {
   .header04 .btn_bookmark {
     order: 2;
     margin-left: auto; }
+    .header04 .btn_bookmark .icon {
+      height: 100%; }
 
 .pd_header04 {
   padding-top: 45px; }
@@ -1139,6 +1149,34 @@ select::-ms-expand {
 
 .pd_gnb_bottom {
   padding-bottom: 56px; }
+
+.nav_gostore {
+  position: fixed;
+  bottom: 0;
+  z-index: 700;
+  height: 48px;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-top: 1px solid #dbdbdb; }
+  .nav_gostore .nav_list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .nav_gostore .nav_icon {
+    display: block;
+    width: 24px;
+    margin: 0 auto; }
+  .nav_gostore .nav_disabled {
+    opacity: .5; }
+
+.pd_nav_gostore {
+  padding-bottom: 48px; }
 
 .list_info_bar01 {
   display: flex;
@@ -2347,7 +2385,8 @@ select::-ms-expand {
     height: 160px;
     border-radius: 80px;
     overflow: hidden;
-    margin: 0 auto; }
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
   .pet_profile01 .inp_profile_box {
     width: 100%;
     position: absolute;
@@ -2906,12 +2945,29 @@ select::-ms-expand {
   .shop_items_container .items_wrap {
     padding: 16px 0 24px; }
 
+.h_load_bar_box {
+  display: none;
+  width: 100%;
+  height: 4px;
+  background-color: #f3f1f6;
+  overflow: hidden; }
+  .h_load_bar_box.show {
+    display: block; }
+  .h_load_bar_box .h_load_bar {
+    width: 0;
+    height: 100%;
+    background-color: #7953d0;
+    border-radius: 0 2px 2px 0;
+    animation: ease-in-out 5s forwards width-0-to-100; }
+
 .load_gostore_container {
-  height: calc(100vh - 90px);
+  display: none;
+  height: calc(100vh - 97px);
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   background-color: #fff; }
+  .load_gostore_container.show {
+    display: flex; }
   .load_gostore_container .load_img_container {
     display: flex;
     flex: 7;
@@ -2942,3 +2998,43 @@ select::-ms-expand {
     font-size: 12px;
     line-height: 1.4;
     color: #616161; }
+
+.page_store {
+  height: calc(100vh - 93px);
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.mail_complete_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; }
+  .mail_complete_container .img_motion_box {
+    width: 140px;
+    margin: 0 auto; }
+    .mail_complete_container .img_motion_box .img {
+      width: 100%; }
+  .mail_complete_container .mail_complete_txt01 {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 900; }
+    .mail_complete_container .mail_complete_txt01 .emph {
+      color: #8054ea; }
+  .mail_complete_container .mail_complete_txt02 {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141; }
+  .mail_complete_container .btn_box {
+    margin-top: 60px;
+    justify-content: center; }
+  .mail_complete_container .btn_mail_success {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px; }

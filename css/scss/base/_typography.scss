@@ -28,6 +28,10 @@
     font-size: $title-font-size;
     font-weight: 900;
     color: $bold-font-color;
+    
+    .emph {
+        color: $main-font-color;
+    }
 }
 .title04 {
     display: flex;

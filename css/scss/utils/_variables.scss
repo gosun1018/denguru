@@ -57,6 +57,7 @@ $layout-large-padding: $layout-base-padding * 1.5;
 // border
 $base-border: 1px solid $gray-3;
 $light-border: 1px solid $gray-2;
+$x-light-border: 1px solid $gray-1;
 $main-border: 1px solid $main-color;
 $secondary-border: 1px solid $secondary-color;
 $accent-border: 1px solid $accent-color;
@@ -68,6 +69,7 @@ $large-border-radius: 10px;
 
 // fixed component height
 $gnb-bottom-height: $layout-base-padding * 3.5;
+$nav-gostore-height: 48px;
 
 $header-height01: $layout-base-padding * 3.5;
 $header-height02: $layout-base-padding * 3.5;
