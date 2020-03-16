@@ -1,0 +1,22 @@
+.store_list_hash {
+    padding: $layout-base-padding 0;
+    background-color: $gray-0;
+
+    .title_hash {
+        padding: 0 $layout-base-padding;
+        margin-bottom: $layout-small-padding;
+        font-size: $mid-font-size;
+        color: $light-font-color;
+    }
+    .store_box {
+        width: 72px;
+        text-align: center;
+    }
+    .store_name {
+        font-size: $small-font-size;
+        @include multi-line-ellipsis($base-line-height, 2);
+    }
+    .thumb_box {
+        @include circle (56px);
+    }
+}
