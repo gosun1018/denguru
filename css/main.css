@@ -3503,6 +3503,13 @@ select::-ms-expand {
     margin: 0 4px; }
   .members_contianer .sns_login_box {
     margin-top: 16px; }
+  .members_contianer .join_title {
+    font-size: 16px;
+    color: #141414; }
+  .members_contianer .join_subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #414141; }
   .members_contianer .sns_login_title {
     font-size: 13px;
     color: #616161; }
