@@ -64,7 +64,6 @@
         object-fit: cover;
     }
 }
-
 @mixin thumnail-border($radius) {
     position: relative;
 
@@ -80,7 +79,6 @@
         border-radius: $radius;
     }
 }
-
 @mixin btn-color-full($color) {
     background-color: $color;
     border: 1px solid $color;

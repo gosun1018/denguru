@@ -1,0 +1,15 @@
+.members_contianer {
+    min-height: calc(100vh - $header-height03);
+    padding: 0 $layout-base-padding*2;
+    background-color: #fff;
+
+    .members_logo {
+        height: 48px;
+        padding: $layout-large-padding 0;
+
+        .img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

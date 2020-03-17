@@ -243,25 +243,6 @@ select::-ms-expand {
             font-family: "NanumSquare", "Apple SD Gothic Neo", "Malgun Gothic", arial, sans-serif;
         }
     }
-    .lab_checkbox01 {
-        font-size: $base-font-size;
-        color: $base-font-color;
-    }
-    .lab_checkbox01:before {
-        content:'';
-        display: inline-block;
-        width: $layout-base-padding;
-        height: $layout-base-padding;
-        background-image: url(../images/icon-checkbox.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        vertical-align: sub;
-        margin-right: 4px;
-    }
-    .inp_check:checked + .lab_checkbox01:before {
-        background-image: url(../images/icon-checkbox-checked.svg);
-    }
 }
 .switch_box {
     

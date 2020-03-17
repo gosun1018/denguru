@@ -244,14 +244,14 @@ select::-ms-expand {
         }
     }
     .lab_checkbox01 {
-        font-size: $base-font-size;
+        font-size: $mid-font-size;
         color: $base-font-color;
     }
     .lab_checkbox01:before {
         content:'';
         display: inline-block;
-        width: $layout-base-padding;
-        height: $layout-base-padding;
+        width: 1.3em;
+        height: 1.3em;
         background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;

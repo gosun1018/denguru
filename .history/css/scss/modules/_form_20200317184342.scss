@@ -243,15 +243,19 @@ select::-ms-expand {
             font-family: "NanumSquare", "Apple SD Gothic Neo", "Malgun Gothic", arial, sans-serif;
         }
     }
+    .inp_check_box {
+        margin-top: 12px;
+        text-align: center;
+    }
     .lab_checkbox01 {
-        font-size: $base-font-size;
+        font-size: $mid-font-size;
         color: $base-font-color;
     }
     .lab_checkbox01:before {
         content:'';
         display: inline-block;
-        width: $layout-base-padding;
-        height: $layout-base-padding;
+        width: 1.3em;
+        height: 1.3em;
         background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -259,7 +263,7 @@ select::-ms-expand {
         vertical-align: sub;
         margin-right: 4px;
     }
-    .inp_check:checked + .lab_checkbox01:before {
+    .inp_check:checked + .lab_checkbox01:after {
         background-image: url(../images/icon-checkbox-checked.svg);
     }
 }

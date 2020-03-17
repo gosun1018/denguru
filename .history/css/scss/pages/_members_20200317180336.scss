@@ -1,0 +1,10 @@
+.members_contianer {
+    min-height: calc(100vh - $header-height03);
+    background-color: #fff;
+    padding-top: 1px;
+
+    .members_logo {
+        height: 48px;
+        margin: $layout-large-padding;
+    }
+}
