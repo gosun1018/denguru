@@ -3401,3 +3401,39 @@ select::-ms-expand {
     line-height: 48px;
     font-size: 16px;
     color: #141414; }
+
+.notification_list_container {
+  background-color: #fff; }
+  .notification_list_container .notification_box {
+    position: relative;
+    padding: 24px 16px; }
+    .notification_list_container .notification_box:not(:first-child):before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 16px;
+      right: 16px;
+      height: 1px;
+      background-color: #f5f5f5; }
+  .notification_list_container .notification_new {
+    background-color: #f3f1f6; }
+  .notification_list_container .notification_link {
+    display: flex; }
+  .notification_list_container .icon_box {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px; }
+  .notification_list_container .notification_content {
+    flex: 1; }
+  .notification_list_container .notification_title {
+    font-size: 14px;
+    color: #141414;
+    line-height: 1.4; }
+  .notification_list_container .notification_date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #616161; }
+  .notification_list_container .notification_img {
+    margin-top: 16px; }
