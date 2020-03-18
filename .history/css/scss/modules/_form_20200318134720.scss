@@ -281,14 +281,8 @@ input[type="password"] {
         &.inp_txt_box_warn {
             border-color: $accent-color;
 
-            + .inp_message {
+            .inp_message {
                 color: $accent-font-color;
-            }
-        }
-        &.inp_txt_box_primary {
-
-            + .inp_message {
-                color: $primary-font-color;
             }
         }
     }
@@ -312,11 +306,6 @@ input[type="password"] {
     }
     .btn_inp_txt {
         font-size: $mid-font-size;
-        flex-shrink: 0;
-
-        .icon {
-            height: 16px;
-        }
     }
     .inp_message {
         margin-top: 4px;
@@ -365,12 +354,7 @@ input[type="password"] {
     .inp_check:checked + .lab_checkbox02:before {
         background-image: url(../images/icon-checkbox-checked.svg);
     }
-    .authentication_time {
-        font-size: $mid-font-size;
-        color: $light-font-color;
-        margin-right: $layout-base-padding;
-        flex-shrink: 0;
-    }
+
 }
 .switch_box {
     

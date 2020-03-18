@@ -86,21 +86,4 @@
     background-color: $gray-0;
     min-height: calc(100vh - 45px);
     
-    .inp_box04 .inp_txt_box {
-        margin-top: $layout-base-padding;
-    }
-    .join_form_agree_container {
-        margin-top: $layout-large-padding;
-    }
-    .lab_checkbox01 {
-        display: inline-block;
-        margin-bottom: $layout-small-padding;
-    }
-    .lab_checkbox02 {
-        margin-left: $layout-small-padding;
-        margin-top: $layout-small-padding;
-    }
-    .btn_join_success {
-        margin-top: $layout-base-padding*2;
-    }
 }

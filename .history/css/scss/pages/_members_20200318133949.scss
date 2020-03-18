@@ -94,13 +94,10 @@
     }
     .lab_checkbox01 {
         display: inline-block;
-        margin-bottom: $layout-small-padding;
+        margin-bottom: $layout-base-padding;
     }
     .lab_checkbox02 {
         margin-left: $layout-small-padding;
         margin-top: $layout-small-padding;
-    }
-    .btn_join_success {
-        margin-top: $layout-base-padding*2;
     }
 }

@@ -312,11 +312,6 @@ input[type="password"] {
     }
     .btn_inp_txt {
         font-size: $mid-font-size;
-        flex-shrink: 0;
-
-        .icon {
-            height: 16px;
-        }
     }
     .inp_message {
         margin-top: 4px;
@@ -369,7 +364,6 @@ input[type="password"] {
         font-size: $mid-font-size;
         color: $light-font-color;
         margin-right: $layout-base-padding;
-        flex-shrink: 0;
     }
 }
 .switch_box {

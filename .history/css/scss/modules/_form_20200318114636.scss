@@ -14,9 +14,6 @@ select {
 select::-ms-expand {
     display: none;
 }
-input[type="password"] {
-    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
-}
 
 //INPUT
 .inp_box01 {
@@ -277,99 +274,14 @@ input[type="password"] {
         box-sizing: border-box;
         border: $base-border;
         border-radius: $base-border-radius;
-
-        &.inp_txt_box_warn {
-            border-color: $accent-color;
-
-            + .inp_message {
-                color: $accent-font-color;
-            }
-        }
-        &.inp_txt_box_primary {
-
-            + .inp_message {
-                color: $primary-font-color;
-            }
-        }
     }
     .inp_txt {
         flex: 1;
-        margin: 0 8px;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        font-size: $base-font-size;
-        color: $bold-font-color;
-
-        &:focus {
-            outline: none;
-        }
     }
     .lab_txt {
-        min-width: 75px;
+        // min-width: ;
         font-size: $mid-font-size;
         color: $base-font-color;
-    }
-    .btn_inp_txt {
-        font-size: $mid-font-size;
-        flex-shrink: 0;
-
-        .icon {
-            height: 16px;
-        }
-    }
-    .inp_message {
-        margin-top: 4px;
-        height: $small-font-size;
-        font-size: $small-font-size;
-        color: $light-font-color;
-    }
-    .lab_checkbox01 {
-        font-size: $base-font-size;
-        color: $base-font-color;
-    }
-    .lab_checkbox01:before {
-        content:'';
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-image: url(../images/icon-checkbox-circle.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        vertical-align: sub;
-        margin-right: 4px;
-    }
-    .inp_check:checked + .lab_checkbox01:before {
-        background-image: url(../images/icon-checkbox-circle-checked.svg);
-    }
-    .lab_checkbox02 {
-        display: flex;
-        font-size: $mid-font-size;
-        line-height: $base-line-height;
-        color: $base-font-color;
-    }
-    .lab_checkbox02:before {
-        content:'';
-        display: inline-block;
-        flex-shrink: 0;
-        width: 16px;
-        height: 16px;
-        background-image: url(../images/icon-checkbox.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        vertical-align: sub;
-        margin-right: 6px;
-    }
-    .inp_check:checked + .lab_checkbox02:before {
-        background-image: url(../images/icon-checkbox-checked.svg);
-    }
-    .authentication_time {
-        font-size: $mid-font-size;
-        color: $light-font-color;
-        margin-right: $layout-base-padding;
-        flex-shrink: 0;
     }
 }
 .switch_box {

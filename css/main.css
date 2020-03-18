@@ -89,6 +89,9 @@ body {
     width: 100%;
     font-size: 12px; }
 
+.vis_hidden {
+  visibility: hidden; }
+
 .sect01 {
   padding: 48px 0 0;
   margin: 16px 0;
@@ -151,6 +154,15 @@ body {
 .txt_right {
   text-align: right; }
 
+.emph_color_main {
+  color: #7953d0; }
+
+.emph_color_accent {
+  color: #ff4d7e; }
+
+.emph_color_primary {
+  color: #0095c6; }
+
 .title01 {
   margin: 0 16px 24px;
   font-size: 18px;
@@ -198,6 +210,10 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #414141; }
+
+.title06 {
+  font-size: 16px;
+  color: #141414; }
 
 .sub_title01 {
   padding-left: 8px;
@@ -253,6 +269,9 @@ select {
 /* IE 10, 11의 네이티브 화살표 숨기기 */
 select::-ms-expand {
   display: none; }
+
+input[type="password"] {
+  font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; }
 
 .inp_box01 {
   margin: 24px 0; }
@@ -451,6 +470,97 @@ select::-ms-expand {
 
 .inp_box03 .inp_check:checked + .lab_checkbox01:before {
   background-image: url(../images/icon-checkbox-checked.svg); }
+
+.inp_box04 .inp_txt_box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px; }
+  .inp_box04 .inp_txt_box.inp_txt_box_warn {
+    border-color: #ff4d7e; }
+    .inp_box04 .inp_txt_box.inp_txt_box_warn + .inp_message {
+      color: #ff4d7e; }
+  .inp_box04 .inp_txt_box.inp_txt_box_primary + .inp_message {
+    color: #0095c6; }
+
+.inp_box04 .inp_txt {
+  flex: 1;
+  margin: 0 8px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #141414; }
+  .inp_box04 .inp_txt:focus {
+    outline: none; }
+
+.inp_box04 .lab_txt {
+  min-width: 75px;
+  font-size: 13px;
+  color: #414141; }
+
+.inp_box04 .btn_inp_txt {
+  font-size: 13px;
+  flex-shrink: 0; }
+  .inp_box04 .btn_inp_txt .icon {
+    height: 16px; }
+
+.inp_box04 .inp_message {
+  margin-top: 4px;
+  height: 12px;
+  font-size: 12px;
+  color: #616161; }
+
+.inp_box04 .lab_checkbox01 {
+  font-size: 14px;
+  color: #414141; }
+
+.inp_box04 .lab_checkbox01:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icon-checkbox-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: sub;
+  margin-right: 4px; }
+
+.inp_box04 .inp_check:checked + .lab_checkbox01:before {
+  background-image: url(../images/icon-checkbox-circle-checked.svg); }
+
+.inp_box04 .lab_checkbox02 {
+  display: flex;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #414141; }
+
+.inp_box04 .lab_checkbox02:before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-checkbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: sub;
+  margin-right: 6px; }
+
+.inp_box04 .inp_check:checked + .lab_checkbox02:before {
+  background-image: url(../images/icon-checkbox-checked.svg); }
+
+.inp_box04 .authentication_time {
+  font-size: 13px;
+  color: #616161;
+  margin-right: 16px;
+  flex-shrink: 0; }
 
 .switch_box .lab_switch {
   font-size: 14px;
@@ -3537,3 +3647,20 @@ select::-ms-expand {
     background-color: #f9e200; }
   .members_contianer .sns_google {
     border: 1px solid #dbdbdb; }
+
+.members_join_form {
+  padding: 32px 16px;
+  background-color: #fff;
+  min-height: calc(100vh - 45px); }
+  .members_join_form .inp_box04 .inp_txt_box {
+    margin-top: 16px; }
+  .members_join_form .join_form_agree_container {
+    margin-top: 24px; }
+  .members_join_form .lab_checkbox01 {
+    display: inline-block;
+    margin-bottom: 8px; }
+  .members_join_form .lab_checkbox02 {
+    margin-left: 8px;
+    margin-top: 8px; }
+  .members_join_form .btn_join_success {
+    margin-top: 32px; }

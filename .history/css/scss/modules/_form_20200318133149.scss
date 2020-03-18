@@ -281,14 +281,8 @@ input[type="password"] {
         &.inp_txt_box_warn {
             border-color: $accent-color;
 
-            + .inp_message {
+            .inp_message {
                 color: $accent-font-color;
-            }
-        }
-        &.inp_txt_box_primary {
-
-            + .inp_message {
-                color: $primary-font-color;
             }
         }
     }
@@ -312,11 +306,6 @@ input[type="password"] {
     }
     .btn_inp_txt {
         font-size: $mid-font-size;
-        flex-shrink: 0;
-
-        .icon {
-            height: 16px;
-        }
     }
     .inp_message {
         margin-top: 4px;
@@ -328,49 +317,23 @@ input[type="password"] {
         font-size: $base-font-size;
         color: $base-font-color;
     }
-    .lab_checkbox01:before {
+    .lab_checkbox01:after {
         content:'';
         display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-image: url(../images/icon-checkbox-circle.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        vertical-align: sub;
-        margin-right: 4px;
-    }
-    .inp_check:checked + .lab_checkbox01:before {
-        background-image: url(../images/icon-checkbox-circle-checked.svg);
-    }
-    .lab_checkbox02 {
-        display: flex;
-        font-size: $mid-font-size;
-        line-height: $base-line-height;
-        color: $base-font-color;
-    }
-    .lab_checkbox02:before {
-        content:'';
-        display: inline-block;
-        flex-shrink: 0;
-        width: 16px;
-        height: 16px;
+        width: 1.3em;
+        height: 1.3em;
         background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         vertical-align: sub;
-        margin-right: 6px;
+        margin-left: 4px;
     }
-    .inp_check:checked + .lab_checkbox02:before {
-        background-image: url(../images/icon-checkbox-checked.svg);
-    }
-    .authentication_time {
+    .lab_checkbox02 {
         font-size: $mid-font-size;
-        color: $light-font-color;
-        margin-right: $layout-base-padding;
-        flex-shrink: 0;
+        color: $base-font-color;
     }
+
 }
 .switch_box {
     
