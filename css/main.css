@@ -3488,7 +3488,7 @@ select::-ms-expand {
       height: 100%;
       object-fit: contain; }
   .members_contianer .members_form_contianer {
-    margin-top: 32px;
+    margin-top: 24px;
     padding-bottom: 16px;
     border-bottom: 1px solid #dbdbdb; }
   .members_contianer .inp_box03 {
@@ -3504,11 +3504,12 @@ select::-ms-expand {
   .members_contianer .sns_login_box {
     margin-top: 16px; }
   .members_contianer .join_title {
-    font-size: 16px;
-    color: #141414; }
+    font-size: 18px;
+    color: #141414;
+    font-weight: bold; }
   .members_contianer .join_subtitle {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 14px;
     color: #414141; }
   .members_contianer .sns_login_title {
     font-size: 13px;

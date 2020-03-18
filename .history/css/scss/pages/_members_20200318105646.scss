@@ -13,7 +13,7 @@
         }
     }
     .members_form_contianer {
-        margin-top: $layout-large-padding;
+        margin-top: $layout-base-padding * 2;
         padding-bottom: $layout-base-padding;
         border-bottom: $light-border;
     }
@@ -41,9 +41,8 @@
     }
     .join_subtitle {
         margin-top: $layout-small-padding;
-        font-size: $base-font-size;
+        font-size: $mid-font-size;
         color: $base-font-color;
-
     }
     .sns_login_title {
         font-size: $mid-font-size;
