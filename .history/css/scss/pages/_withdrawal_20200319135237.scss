@@ -1,0 +1,33 @@
+.withdrawal_title_container {
+    padding: $layout-base-padding*2 $layout-base-padding;
+    background-color: $gray-0;
+
+    .img_box {
+        height: 64px;
+
+        .img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .withdrawal_title {
+        margin-top: $layout-base-padding;
+        font-size: $title-font-size;
+        font-weight: bold;
+        color: $bold-font-color;
+    }
+}
+.withdrawal_info_container {
+    padding: $layout-large-padding $layout-base-padding;
+
+    .withdrawal_item_num {
+        font-weight: bold;
+        color: $main-font-color;
+    }
+    .withdrawal_item_box {
+        margin-bottom: $layout-large-padding;
+    }
+    .withdrawal_item_list_container {
+        margin-top: $layout-small-padding;
+    }
+}
