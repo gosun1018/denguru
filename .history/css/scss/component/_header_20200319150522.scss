@@ -271,10 +271,6 @@
     .h_btn_icon {
         width: $layout-base-padding * 2;
         height: $layout-base-padding * 2;
-        
-        .icon {
-            height: 100%;
-        }
     }
     .img_shop_box {
         display: inline-block;
@@ -301,10 +297,11 @@
     }
     .btn_bookmark{
         order: 2;
-    }
-    .h_btn_right {
-        order: 2;
-        margin-left: 4px;
+        margin-left: auto;
+
+        .icon {
+            height: 100%;
+        }
     }
 }
 .pd_header04 {

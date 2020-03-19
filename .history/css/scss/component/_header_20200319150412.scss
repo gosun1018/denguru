@@ -271,6 +271,8 @@
     .h_btn_icon {
         width: $layout-base-padding * 2;
         height: $layout-base-padding * 2;
+        margin-left: $layout-small-padding;
+        order: 2;
         
         .icon {
             height: 100%;
@@ -301,10 +303,8 @@
     }
     .btn_bookmark{
         order: 2;
-    }
-    .h_btn_right {
-        order: 2;
-        margin-left: 4px;
+        margin-left: auto;
+
     }
 }
 .pd_header04 {

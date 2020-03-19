@@ -128,11 +128,11 @@
         &.active:after {
             content: '';
             position: absolute;
-            bottom: -1px;
+            bottom: 0;
             display: block;
             width: 100%;
             height: 2px;
-            background-color: $main-color;
+            background-color: #$main-color;
         }
     }
 

@@ -213,13 +213,17 @@ input[type="password"] {
         border: $base-border;
         border-radius: $base-border-radius;
         box-sizing: border-box;
-        font-size: $mid-font-size;
+        font-size: $base-font-size;
         color: $base-font-color;
+    }
+    .inp_txt {
+        height: 37px;
     }
     .inp_textarea {
         padding: $layout-small-padding;
         line-height: $base-line-height;
         min-height: 56px;
+        font-size: $mid-font-size;
 
         &:focus {
             outline: none;
