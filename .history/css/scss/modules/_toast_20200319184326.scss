@@ -1,0 +1,20 @@
+.toast_box {
+    position: fixed;
+    bottom: $gnb-bottom-height + $layout-small-padding;
+    left: $layout-base-padding;
+    right: $layout-base-padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $layout-small-padding;
+    min-height: 48px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.85);
+    color: #fff;
+    font-size: $base-font-size;
+    text-align: center;
+    word-break: keep-all;
+    border-radius: $large-border-radius;
+    line-height: $base-line-height;
+    
+}

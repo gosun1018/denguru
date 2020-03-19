@@ -1,0 +1,7 @@
+.toast_box {
+    position: fixed;
+    bottom: $gnb-bottom-height + $layout-base-padding;
+    left: $layout-base-padding;
+    right: $layout-base-padding;
+    background-color: rgba(0,0,0,0.9);
+}
