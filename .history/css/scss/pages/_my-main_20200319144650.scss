@@ -149,7 +149,6 @@
     }
     .my_setting_txt {
         font-size: $base-font-size;
-        color: $base-font-color;
     }
     .my_setting_btn {
         text-align: right;
@@ -163,11 +162,5 @@
         flex: 1;
         background-color: $gray-0;
         padding: $layout-base-padding;
-
-        .link {
-            text-decoration: underline;
-            font-size: $small-font-size;
-            color: $base-font-color;
-        }
     }
 }
