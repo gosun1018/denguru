@@ -1,0 +1,13 @@
+.post_content_wrap {
+    flex: 1;
+
+    .post_content_title_container {
+        padding: $layout-base-padding;
+        border-bottom: $light-border;
+    }
+    .post_content_title {
+        font-size: $large-font-size;
+        font-weight: bold;
+        color: $base-font-color;
+    }
+}

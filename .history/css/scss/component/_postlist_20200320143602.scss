@@ -1,0 +1,33 @@
+.post_list_wrap {
+    flex: 1;
+    padding: $layout-small-padding 0 $layout-base-padding;
+    background-color: $gray-0;
+
+    .pagination01 {
+        margin-top: $layout-base-padding * 2;
+    }
+}
+
+.post_list01 {
+    padding: 0 $layout-base-padding;    
+
+    .post_item {
+        padding: $layout-base-padding 0;
+        border-bottom: $light-border;
+    }
+    .post_date {
+        margin-bottom: $layout-small-padding;
+        font-size: $small-font-size;
+        color: $light-font-color;
+    }
+    .post_title {
+        font-size: $base-font-size;
+        color: $bold-font-color;
+        line-height: $base-line-height;
+
+        .icon_new {
+            height: 1em;
+            vertical-align: middle;
+        }
+    }
+}
