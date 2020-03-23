@@ -114,11 +114,10 @@
 
     .inp_box04 {
         margin: $layout-base-padding 0;
-    }
-    .inp_box02 .lab_box {
-        font-size: $mid-font-size;
-        text-indent: $layout-small-padding;
-        color: $base-font-color;
+
+        .lab {
+            font-size: $mid-font-size;
+        }
     }
     .inp_textarea {
         min-height: 160px;

@@ -109,18 +109,6 @@
     }
 }
 .complain_write_container {
-    padding: 0 $layout-base-padding;
+    padding-top: $layout-base-padding;
     border-top: $light-border;
-
-    .inp_box04 {
-        margin: $layout-base-padding 0;
-    }
-    .inp_box02 .lab_box {
-        font-size: $mid-font-size;
-        text-indent: $layout-small-padding;
-        color: $base-font-color;
-    }
-    .inp_textarea {
-        min-height: 160px;
-    }
 }

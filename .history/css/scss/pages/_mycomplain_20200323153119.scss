@@ -1,4 +1,6 @@
 .complain_container{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: $gray-0;
     padding: $layout-large-padding 0;
@@ -23,6 +25,7 @@
     }
 }
 .complain_list_container {
+    flex: 1;
 
     .complain_box {
         border-bottom: $light-border;
@@ -103,24 +106,5 @@
             height: 16px;
             margin-right: $layout-small-padding;
         }
-    }
-    .noreview_message_container {
-        min-height: 220px;
-    }
-}
-.complain_write_container {
-    padding: 0 $layout-base-padding;
-    border-top: $light-border;
-
-    .inp_box04 {
-        margin: $layout-base-padding 0;
-    }
-    .inp_box02 .lab_box {
-        font-size: $mid-font-size;
-        text-indent: $layout-small-padding;
-        color: $base-font-color;
-    }
-    .inp_textarea {
-        min-height: 160px;
     }
 }

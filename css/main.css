@@ -3243,6 +3243,10 @@ input[type="password"] {
     font-size: 12px;
     line-height: 1.4;
     color: #616161; }
+  .noreview_message_container .txt03 {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141; }
   .noreview_message_container .btn_box {
     margin-top: 16px; }
 
@@ -4213,3 +4217,18 @@ input[type="password"] {
     width: 16px;
     height: 16px;
     margin-right: 8px; }
+
+.complain_list_container .noreview_message_container {
+  min-height: 220px; }
+
+.complain_write_container {
+  padding: 0 16px;
+  border-top: 1px solid #dbdbdb; }
+  .complain_write_container .inp_box04 {
+    margin: 16px 0; }
+  .complain_write_container .inp_box02 .lab_box {
+    font-size: 13px;
+    text-indent: 8px;
+    color: #414141; }
+  .complain_write_container .inp_textarea {
+    min-height: 160px; }

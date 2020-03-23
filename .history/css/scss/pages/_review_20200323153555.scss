@@ -40,7 +40,7 @@
         color: $base-font-color;
 
         .num {
-            color: $main-bold-font-color;
+            color: $main-font-color;
             font-weight: bold;
         }
     }
@@ -201,9 +201,12 @@
             .img {
                 width: 26.9444vw;
                 height: 26.9444vw;
+                max-width: 194px;
+                max-height: 194px;
                 margin: 0 4px;
+                box-sizing: border-box;
+                border: 1px solid rgba($gray-2, 0.5);
                 border-radius: $base-border-radius;
-                @include thumnail-border($base-border-radius);
             }
             &:first-child .img {
                 margin-left: $layout-base-padding;
@@ -262,7 +265,7 @@
 }
 .review_item_stars_contianer {
     padding: 0 0 $layout-large-padding;
-    margin: $layout-base-padding 0;
+    margin-top: $layout-base-padding;
     background-color: $gray-0;
 
     .review_item_stars_title {
@@ -287,11 +290,18 @@
     }
     .review_img_container {
         margin-top: $layout-base-padding;
+        background-color: #fff;
+    }
+    .noreview_message_container {
+        padding: $layout-base-padding  $layout-base-padding 0;
     }
 }
 .review_item_container {
-    margin: $layout-base-padding 0;
+    margin: $layout-base-padding 0 0;
     background-color: $gray-0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 
     .review_item_top_bar {
         height: 40px;
@@ -307,6 +317,10 @@
             color: $base-font-color;
         }
     }
+    .noreview_message_container {
+        flex: 1;
+        margin-bottom: 64px;
+    }
 }
 .filter_star_rate_box {
     display: flex;
@@ -319,20 +333,65 @@
     }
     .graph {
         margin: 0 $layout-small-padding;
-        height: $layout-base-padding;
+        height: 12px;
         flex: 1;
-        background-color: $gray-1;
+        background-color: $bg-gray-color;
         border-radius: $layout-base-padding;
         overflow: hidden;
         box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
     }
     .graph_bar {
         height: 100%;
-        background-color: lighten($main-color, 20.1);
+        background: rgb(128,84,234);
+        background: linear-gradient(90deg, rgba(128,84,234,1) 0%, rgba(187,160,253,1) 100%);
         border-radius: $layout-base-padding;
         box-shadow: 0 0 4px rgba(0,0,0,0.1);
     }
     .filter_star_rate_num {
         width: 35px;
+    }
+}
+.review_user_contianer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .noreview_message_container {
+        flex: 1;
+        background-color: $gray-0;
+
+        & > div {
+            margin-bottom: 64px;
+        }
+    }
+}
+.noreview_message_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img_noreview {
+        @include circle(104px);
+        margin: 0 auto $layout-base-padding;
+        box-shadow: 0 1px 8px rgba(0,0,0,0.15);
+    }
+    .txt01 {
+        font-size: $title-font-size;
+        color: $main-font-color;
+        font-weight: bold;
+    }
+    .txt02 {
+        margin-top: $layout-small-padding;
+        font-size: $small-font-size;
+        line-height: $base-line-height;
+        color: $light-font-color;
+    }
+    .txt03 {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        color: $base-font-color;
+    }
+    .btn_box {
+        margin-top: $layout-base-padding;
     }
 }
