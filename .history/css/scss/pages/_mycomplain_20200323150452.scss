@@ -1,0 +1,101 @@
+.complain_container{
+    flex: 1;
+    background-color: $gray-0;
+    padding: $layout-large-padding 0;
+
+    .title08 {
+        margin: 0 $layout-base-padding $layout-base-padding;
+    }
+}
+.complain_announce_container {
+    padding: $layout-base-padding;
+    border-top: $light-border;
+    border-bottom: $light-border;
+
+    .complain_announce_txt {
+        margin-top: 12px;
+        font-size: $base-font-size;
+        color: $base-font-color;
+        line-height: $base-line-height;
+    }
+    .btn_box {
+        margin-top: $layout-base-padding;
+    }
+}
+.complain_list_container {
+
+    .complain_box {
+        border-bottom: $light-border;
+    }
+    .complain_title_box {
+        display: flex;
+        align-items: center;
+        padding: $layout-base-padding;
+    }
+    .complain_title_txt_box {
+        flex: 1;
+        margin-right: 4px;
+    }
+    .complain_title {
+        font-size: $base-font-size;
+        line-height: $mid-line-height;
+        color: $bold-font-color;
+
+        .tag {
+            flex-shrink: 0;
+            width: 64px;
+            height: 21px;
+            margin-right: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 19px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: $small-font-size;
+
+            &_wait {
+                border: $light-border;
+                color: $base-font-color;
+            }
+            &_hasreply {
+                border: $main-border;
+                color: $main-font-color;
+            }
+        }
+    }
+    .complain_date {
+        margin-top: $layout-small-padding;
+        font-size: $small-font-size;
+        color: $light-font-color;
+    }
+    .btn_accordion {
+        width: 24px;
+        height: 24px;
+    }
+    .complain_content_box {
+        display: none;
+    }
+    .complain_content {
+        margin: 0 $layout-base-padding;
+        padding: $layout-base-padding 0;
+        border-top: $light-border;
+        font-size: $mid-font-size;
+        color: $base-font-color;
+        line-height: $base-line-height;
+    }
+    .complain_reply_box {
+        display: flex;
+        align-items: flex-start;
+        padding: $layout-base-padding;
+        background-color: $bg-gray-color;
+        font-size: $mid-font-size;
+        color: $base-font-color;
+        line-height: $base-line-height;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: $layout-small-padding;
+        }
+    }
+}

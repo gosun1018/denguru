@@ -1,0 +1,9 @@
+.complain_container{
+    flex: 1;
+    background-color: $gray-0;
+    padding: $layout-large-padding 0;
+
+    .title08 {
+        margin: 0 $layout-base-padding $layout-base-padding;
+    }
+}

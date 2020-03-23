@@ -224,6 +224,16 @@ body {
   font-size: 14px;
   color: #141414; }
 
+.title08 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #414141; }
+
+.title09 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #414141; }
+
 .sub_title01 {
   padding-left: 8px;
   margin: 0 16px;
@@ -4113,3 +4123,93 @@ input[type="password"] {
     right: 0;
     font-size: 12px;
     color: #747474; }
+
+.complain_container {
+  flex: 1;
+  background-color: #fff;
+  padding: 24px 0; }
+  .complain_container .title08 {
+    margin: 0 16px 16px; }
+
+.complain_announce_container {
+  padding: 16px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb; }
+  .complain_announce_container .complain_announce_txt {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #414141;
+    line-height: 1.4; }
+  .complain_announce_container .btn_box {
+    margin-top: 16px; }
+
+.complain_list_container .complain_box {
+  border-bottom: 1px solid #dbdbdb; }
+
+.complain_list_container .complain_title_box {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px; }
+
+.complain_list_container .complain_title_txt_box {
+  flex: 1;
+  margin-right: 4px; }
+
+.complain_list_container .complain_title {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #141414; }
+  .complain_list_container .complain_title .tag {
+    flex-shrink: 0;
+    width: 64px;
+    height: 21px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px; }
+    .complain_list_container .complain_title .tag_wait {
+      border: 1px solid #dbdbdb;
+      color: #414141; }
+    .complain_list_container .complain_title .tag_hasreply {
+      border: 1px solid #7953d0;
+      color: #7953d0; }
+
+.complain_list_container .complain_date {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #616161; }
+
+.complain_list_container .btn_accordion {
+  margin-top: 6px;
+  width: 24px;
+  height: 24px;
+  transition: transform .2s; }
+  .complain_list_container .btn_accordion.up {
+    transform: rotate(-180deg); }
+
+.complain_list_container .complain_content_box {
+  display: none; }
+
+.complain_list_container .complain_content {
+  margin: 0 16px;
+  padding: 16px 0;
+  border-top: 1px solid #dbdbdb;
+  font-size: 13px;
+  color: #414141;
+  line-height: 1.4; }
+
+.complain_list_container .complain_reply_box {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #f3f1f6;
+  font-size: 13px;
+  color: #414141;
+  line-height: 1.4; }
+  .complain_list_container .complain_reply_box .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; }
