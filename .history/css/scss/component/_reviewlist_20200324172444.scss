@@ -435,11 +435,11 @@
         padding: $layout-base-padding 0;
 
         .review_content_wrap {
-            -webkit-filter:blur(10px);
-            -moz-filter:blur(10px);
-            -o-filter:blur(10px);
-            -ms-filter:blur(10px);
-            filter:blur(10px);
+            -webkit-filter:blur(8px);
+            -moz-filter:blur(8px);
+            -o-filter:blur(8px);
+            -ms-filter:blur(8px);
+            filter:blur(8px);
         }
     }
     .review_blind_container {
@@ -454,7 +454,7 @@
         left: 0;
         padding: $layout-base-padding $layout-small-padding;
         box-sizing: border-box;
-        background-color: rgba(239, 236, 243, 0.5);
+        background-color: rgba(211, 204, 224, 0.24);
 
         .btn_review_write {
             height: 38px;

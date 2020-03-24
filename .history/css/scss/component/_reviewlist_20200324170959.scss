@@ -431,30 +431,24 @@
     }
     .review_content_blind_wrap {
         position: relative;
-        margin-top: $layout-base-padding;
-        padding: $layout-base-padding 0;
 
-        .review_content_wrap {
-            -webkit-filter:blur(10px);
-            -moz-filter:blur(10px);
-            -o-filter:blur(10px);
-            -ms-filter:blur(10px);
-            filter:blur(10px);
-        }
+        -webkit-filter:blur(10px);
+        -moz-filter:blur(10px);
+        -o-filter:blur(10px);
+        -ms-filter:blur(10px);
+        filter:blur(10px);
     }
     .review_blind_container {
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         padding: $layout-base-padding $layout-small-padding;
         box-sizing: border-box;
-        background-color: rgba(239, 236, 243, 0.5);
+        background-color: $bg-gray-color;
+        border: $light-border;
+        border-radius: $base-border-radius;
 
         .btn_review_write {
             height: 38px;

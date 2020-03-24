@@ -183,15 +183,10 @@
         @include thumnail-border($base-border-radius);
     }
     .tag_new {
-        display: block;
         position: absolute;
-        top: 4px;
-        right: 4px;
-        height: 13px;
-
-        .img_tag {
-            height: 100%;
-        }
+        top: 2px;
+        right: 2px;
+        height: 10px;
     }
     .item_shop {
         font-size: $small-font-size;

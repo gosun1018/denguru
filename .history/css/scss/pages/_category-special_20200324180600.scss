@@ -1,0 +1,17 @@
+.category_wrap {
+    background-color: $gray-0;
+
+    .title08 {
+        padding: $layout-large-padding $layout-base-padding 0;
+    }
+}
+
+.special_wrap {
+    margin-top: $layout-base-padding;
+    flex: 1;
+    background-color: $gray-0;
+
+    .title08 {
+        padding: $layout-large-padding $layout-base-padding 0;
+    }
+}

@@ -89,6 +89,7 @@ body {
   min-height: 100vh; }
 
 .img_box {
+  display: block;
   font-size: 0; }
   .img_box .img {
     width: 100%;
@@ -1668,6 +1669,7 @@ input[type="password"] {
   .item_list03 .item_box:not(:nth-child(-n+3)) {
     margin-top: 24px; }
   .item_list03 .item_thum {
+    position: relative;
     width: 100%;
     padding-bottom: 100%;
     margin-bottom: 4px;
@@ -1692,6 +1694,14 @@ input[type="password"] {
       box-sizing: border-box;
       border: 1px solid rgba(219, 219, 219, 0.5);
       border-radius: 5px; }
+  .item_list03 .tag_new {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 13px; }
+    .item_list03 .tag_new .img_tag {
+      height: 100%; }
   .item_list03 .item_shop {
     font-size: 12px;
     color: #616161;
@@ -2239,12 +2249,30 @@ input[type="password"] {
   font-size: 13px;
   color: #616161; }
 
+.review_list03 .review_content_blind_wrap {
+  position: relative;
+  margin-top: 16px;
+  padding: 16px 0; }
+  .review_list03 .review_content_blind_wrap .review_content_wrap {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px); }
+
 .review_list03 .review_blind_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   padding: 16px 8px;
-  margin: 16px 16px 0;
-  background-color: #f3f1f6;
-  border: 1px solid #dbdbdb;
-  border-radius: 5px; }
+  box-sizing: border-box;
+  background-color: rgba(239, 236, 243, 0.5); }
   .review_list03 .review_blind_container .btn_review_write {
     height: 38px;
     line-height: 38px;
@@ -4295,3 +4323,25 @@ input[type="password"] {
     color: #414141; }
   .complain_write_container .inp_textarea {
     min-height: 160px; }
+
+.category_wrap {
+  background-color: #fff; }
+  .category_wrap .title08 {
+    padding: 24px 16px 0; }
+
+.special_wrap {
+  margin-top: 8px;
+  padding-bottom: 24px;
+  flex: 1;
+  background-color: #fff; }
+  .special_wrap .title08 {
+    padding: 24px 16px 0; }
+  .special_wrap .store_list_hash {
+    padding-bottom: 0; }
+  .special_wrap .banner_list {
+    padding: 0 16px; }
+  .special_wrap .banner_box {
+    border-radius: 5px;
+    overflow: hidden; }
+    .special_wrap .banner_box:not(:last-child) {
+      margin-bottom: 16px; }
