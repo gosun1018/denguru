@@ -3486,41 +3486,6 @@ input[type="password"] {
   .page_store.show {
     display: block; }
 
-.mail_complete_container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; }
-  .mail_complete_container .img_motion_box {
-    width: 140px;
-    margin: 0 auto; }
-    .mail_complete_container .img_motion_box .img {
-      width: 100%; }
-  .mail_complete_container .mail_complete_txt01 {
-    margin-top: 24px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 900; }
-    .mail_complete_container .mail_complete_txt01 .emph {
-      color: #8054ea; }
-  .mail_complete_container .mail_complete_txt02 {
-    margin-top: 12px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #414141; }
-  .mail_complete_container .btn_box {
-    margin-top: 60px;
-    justify-content: center; }
-  .mail_complete_container .btn_mail_success {
-    width: 90px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px; }
-
 .store_list_hash {
   padding: 16px 0;
   background-color: #fff; }
@@ -3677,6 +3642,104 @@ input[type="password"] {
     font-size: 12px;
     color: #fff;
     background-color: #ff4d7e; }
+
+.store_info_container {
+  position: fixed;
+  top: 0;
+  z-index: 400;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  padding: 69px 16px 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
+  .store_info_container .store_info_box {
+    display: flex;
+    align-items: flex-start; }
+  .store_info_container .store_thum {
+    display: block;
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    margin-right: 8px;
+    overflow: hidden; }
+  .store_info_container .store_info_txt_box {
+    flex: 1; }
+  .store_info_container .store_name {
+    margin: 4px 0 8px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #141414; }
+  .store_info_container .store_tag01 {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #616161;
+    line-height: 1.2; }
+  .store_info_container .store_tag02 {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #0095c6;
+    line-height: 1.2; }
+  .store_info_container .btn_bookmark {
+    flex-shrink: 0;
+    margin-left: 8px; }
+    .store_info_container .btn_bookmark .icon {
+      width: 32px; }
+    .store_info_container .btn_bookmark .bookmark_num {
+      display: block;
+      font-size: 12px;
+      color: #747474; }
+
+.store_item_list_container {
+  flex: 1;
+  padding: 24px 0;
+  background-color: #fff; }
+  .store_item_list_container .store_new_item_info {
+    padding: 0 16px;
+    font-size: 12px;
+    color: #616161; }
+    .store_item_list_container .store_new_item_info .emph {
+      color: #414141; }
+  .store_item_list_container .item_list03 {
+    margin-top: 16px; }
+
+.mail_complete_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; }
+  .mail_complete_container .img_motion_box {
+    width: 140px;
+    margin: 0 auto; }
+    .mail_complete_container .img_motion_box .img {
+      width: 100%; }
+  .mail_complete_container .mail_complete_txt01 {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 900; }
+    .mail_complete_container .mail_complete_txt01 .emph {
+      color: #8054ea; }
+  .mail_complete_container .mail_complete_txt02 {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141; }
+  .mail_complete_container .btn_box {
+    margin-top: 60px;
+    justify-content: center; }
+  .mail_complete_container .btn_mail_success {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px; }
 
 .my_profile {
   position: relative;
