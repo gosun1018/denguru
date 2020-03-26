@@ -1,0 +1,12 @@
+.pick_title_box {
+    display: flex;
+    padding: $layout-large-padding $layout-base-padding $layout-base-padding;
+
+    .pick_title_btn_box {
+
+    }
+    .btn_pick {
+        width: 32px;
+        height: 32px;
+    }
+}

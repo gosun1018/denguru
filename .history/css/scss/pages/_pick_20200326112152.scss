@@ -1,0 +1,18 @@
+.pick_title_box {
+    display: flex;
+    align-items: center;
+    padding: $layout-large-padding $layout-base-padding $layout-base-padding;
+    background-color: $gray-0;
+
+    .pick_title_btn_box {
+        font-size: 0;
+    }
+    .btn_pick {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: $layout-small-padding;
+        font-size: 10px;
+
+    }
+}
