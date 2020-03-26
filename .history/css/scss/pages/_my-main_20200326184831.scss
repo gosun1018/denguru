@@ -175,17 +175,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: $layout-small-padding;
-    
-    .noreview_message_container {
-        background-color: $gray-0;
-        flex: 1;
-        padding-bottom: 20%;
-    }
+
     .event_box {
         position: relative;
         background-color: $gray-0;
-        margin-bottom: $layout-small-padding;
     }
     .event_txt_box {
         padding: $layout-base-padding;
@@ -193,42 +186,23 @@
     .event_title {
         font-size: $large-font-size;
         color: $base-font-color;
-        font-weight: bold;
-        line-height: $narrow-line-height;
     }
     .event_date {
         margin-top: $layout-small-padding;
         font-size: $small-font-size;
-        color: $light-font-color;
     }
     .event_tag_box {
         position: absolute;
         top: 10px;
         right: 10px;
-        font-size: 0;
     }
     .tag {
-        display: inline-block;
         padding: 6px 10px;
         border-radius: 20px;
         font-size: $mid-font-size;
-        min-width: 40px;
-        text-align: center;
-        margin-right: 4px;
 
-        &:last-child {
-            margin-right: 0;
-        }
         &_main {
             background-color: $main-color;
-            color: $gray-0;
-        }
-        &_accent {
-            background-color: $accent-color;
-            color: $gray-0;
-        }
-        &_primary {
-            background-color: $primary-color;
             color: $gray-0;
         }
     }
