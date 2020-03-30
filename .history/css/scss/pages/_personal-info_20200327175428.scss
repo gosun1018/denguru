@@ -1,0 +1,23 @@
+.recommand_password_container {
+    flex: 1;
+    background-color: $gray-0;
+}
+.recommand_password_txt_container {
+    display: flex;
+
+    .recommand_password_img_box {
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+
+        .img {
+            width: 100%;
+        }
+    }
+    .recommand_password_txt_box {
+        flex: 1;
+    }
+}
+.change_password_form_container {
+    padding: 0 $layout-base-padding*2;
+}

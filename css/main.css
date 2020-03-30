@@ -155,6 +155,7 @@ body {
   background-color: #fff; }
 
 .sect_ad01 {
+  margin-bottom: 16px;
   font-size: 0; }
   .sect_ad01 .bnr {
     width: 100%;
@@ -522,8 +523,23 @@ input[type="password"] {
       color: #ff4d7e; }
   .inp_box04 .inp_txt_box.inp_txt_box_primary + .inp_message {
     color: #0095c6; }
+  .inp_box04 .inp_txt_box.inp_disabled {
+    background-color: #f3f1f6; }
+
+.inp_box04 .tel_box {
+  flex: 1;
+  align-items: stretch;
+  align-self: stretch; }
+  .inp_box04 .tel_box .inp_tel {
+    width: 28%;
+    height: 100%;
+    margin: 0; }
+  .inp_box04 .tel_box select.inp_tel {
+    width: 22%;
+    margin-right: 2px; }
 
 .inp_box04 .inp_txt {
+  width: 1%;
   flex: 1;
   margin: 0 8px;
   padding: 0;
@@ -535,6 +551,7 @@ input[type="password"] {
     outline: none; }
 
 .inp_box04 .lab_txt {
+  flex-shrink: 0;
   min-width: 75px;
   font-size: 13px;
   color: #414141; }
@@ -597,6 +614,17 @@ input[type="password"] {
   color: #616161;
   margin-right: 16px;
   flex-shrink: 0; }
+
+.inp_box04_flex {
+  display: flex; }
+  .inp_box04_flex .inp_btn_box {
+    margin-left: 4px;
+    flex-shrink: 0; }
+    .inp_box04_flex .inp_btn_box .btn {
+      height: 100%;
+      box-sizing: border-box; }
+  .inp_box04_flex .inp_txt {
+    width: 1%; }
 
 .switch_box .lab_switch {
   font-size: 14px;
@@ -1050,6 +1078,9 @@ input[type="password"] {
     display: block;
     width: 100%;
     height: 100%; }
+    .pagination01 .page_link .icon {
+      padding-top: 3px;
+      object-fit: contain; }
 
 .header01 {
   position: fixed;
@@ -1231,7 +1262,8 @@ input[type="password"] {
   padding: 0 16px;
   background-color: #7953d0; }
   .header03 .btn_box {
-    flex: 1; }
+    flex: 1;
+    align-items: center; }
   .header03 .h_title {
     position: absolute;
     top: 50%;
@@ -1861,6 +1893,64 @@ input[type="password"] {
   font-size: 13px;
   color: #141414; }
 
+.item_list05 .item_box {
+  padding: 16px 0;
+  margin: 0 16px;
+  border-bottom: 1px solid #f5f5f5; }
+
+.item_list05 .item_link {
+  display: flex;
+  align-items: center; }
+
+.item_list05 .item_thum {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  position: relative; }
+  .item_list05 .item_thum .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .item_list05 .item_thum:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(219, 219, 219, 0.5);
+    border-radius: 5px; }
+
+.item_list05 .item_txt_box {
+  flex: 1;
+  overflow: hidden; }
+
+.item_list05 .item_name {
+  width: 100%;
+  font-size: 14px;
+  color: #414141;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.item_list05 .item_price {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #141414;
+  font-weight: bold; }
+
+.item_list05 .btn_more {
+  flex-shrink: 0;
+  width: 24px; }
+
 @media screen and (max-width: 359px) {
   .item_list01 .rate_discount {
     font-size: 12px; }
@@ -2464,6 +2554,13 @@ input[type="password"] {
   line-height: 1.6;
   color: #414141; }
 
+.post_content_article02 {
+  padding: 24px 16px;
+  margin: 0 16px;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  line-height: 1.4; }
+
 .post_content_link_container {
   flex: 1;
   padding: 0 16px;
@@ -2490,6 +2587,59 @@ input[type="password"] {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
+
+.reply_container {
+  padding: 32px 0;
+  background-color: #fff; }
+  .reply_container .title06 {
+    padding: 0 16px; }
+
+.reply_write_container {
+  padding: 0 16px; }
+  .reply_write_container .btn_box {
+    margin-top: 4px; }
+
+.reply_list_container {
+  margin-top: 24px;
+  border-top: 1px solid #dbdbdb; }
+  .reply_list_container .reply_box {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 16px; }
+  .reply_list_container .reply_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .reply_list_container .reply_user {
+    font-size: 13px;
+    font-weight: bold;
+    color: #141414; }
+  .reply_list_container .reply_date {
+    font-size: 12px;
+    color: #616161; }
+  .reply_list_container .reply_post {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141; }
+    .reply_list_container .reply_post .icon {
+      height: 1em;
+      vertical-align: middle; }
+  .reply_list_container .reply_btn_box {
+    margin-top: 8px; }
+    .reply_list_container .reply_btn_box .btn {
+      font-size: 13px;
+      color: #616161; }
+    .reply_list_container .reply_btn_box .btn_right .btn {
+      margin-left: 4px; }
+    .reply_list_container .reply_btn_box .btn_left .btn {
+      margin-right: 4px; }
+  .reply_list_container .pagination01 {
+    margin-top: 24px; }
+
+.event_end_post {
+  margin: 16px 16px 0;
+  padding: 16px;
+  border: 1px solid #dbdbdb; }
 
 .main_profile {
   position: relative;
@@ -4042,6 +4192,20 @@ input[type="password"] {
       background-color: #0095c6;
       color: #fff; }
 
+.version_info {
+  padding: 16px 0;
+  font-size: 13px;
+  color: #616161; }
+
+.store_join_form_container {
+  margin-bottom: 8px;
+  padding: 16px;
+  background-color: #fff; }
+  .store_join_form_container:last-child {
+    margin-bottom: 0; }
+  .store_join_form_container .inp_box04:not(:last-child) {
+    margin-bottom: 8px; }
+
 .notification_list_container {
   background-color: #fff; }
   .notification_list_container .notification_box {
@@ -4303,6 +4467,10 @@ input[type="password"] {
       border-radius: 5px; }
   .order_item_info_container .order_item_txt_box {
     flex: 1; }
+  .order_item_info_container .order_item_store {
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #616161; }
   .order_item_info_container .order_item_title {
     font-size: 14px;
     color: #141414;
@@ -4514,6 +4682,12 @@ input[type="password"] {
   padding: 0 16px;
   margin-bottom: 16px; }
 
+.event_post_content_wrap {
+  padding-top: 24px;
+  background-color: #fff; }
+  .event_post_content_wrap .title06 {
+    margin: 0 16px 16px; }
+
 .pick_title_box {
   display: flex;
   align-items: center;
@@ -4581,3 +4755,46 @@ input[type="password"] {
     background-color: rgba(121, 83, 208, 0.2); }
     .pick_inp_check_box .inp_check:checked + .lab_check:before {
       background-image: url(../images/icon-checkbox-circle-checked.svg); }
+
+.recommand_password_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 48px 0; }
+
+.recommand_password_title_box {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #141414;
+  line-height: 1.2; }
+
+.recommand_password_img_box {
+  margin: 0 auto 16px;
+  height: 96px;
+  text-align: center; }
+  .recommand_password_img_box .img {
+    height: 100%; }
+
+.recommand_password_txt_box {
+  padding: 0 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #414141;
+  line-height: 1.4; }
+
+.change_password_form_container {
+  padding: 0 32px; }
+  .change_password_form_container .btn {
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px; }
+  .change_password_form_container .inp_box04 {
+    margin-bottom: 16px; }
+  .change_password_form_container .inp_txt::placeholder {
+    font-size: 12px; }
+  @media screen and (max-width: 359px) {
+    .change_password_form_container {
+      padding: 0 16px; } }

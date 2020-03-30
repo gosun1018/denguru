@@ -1,0 +1,40 @@
+.recommand_password_container {
+    flex: 1;
+    background-color: $gray-0;
+    padding: 80px 0;
+}
+.recommand_password_title_box {
+    margin-bottom: $layout-large-padding;
+    font-size: $title-font-size;
+    line-height: $narrow-line-height;
+}
+.recommand_password_img_box {
+    margin: 0 auto $layout-base-padding;
+    width: 80px;
+    height: 80px;
+
+    .img {
+        width: 100%;
+    }
+}
+.recommand_password_txt_container {
+    display: flex;
+    padding: 0 $layout-base-padding;
+    margin-bottom: $layout-large-padding;
+
+    .recommand_password_txt_box {
+        flex: 1;
+        font-size: $base-font-size;
+        color: $base-font-color;
+        line-height: $base-line-height;
+    }
+}
+.change_password_form_container {
+    padding: 0 $layout-base-padding*2;
+
+    .btn {
+        font-size: $base-font-size;
+        height: 40px;
+        line-height: 38px;
+    }
+}
