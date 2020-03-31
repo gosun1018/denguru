@@ -43,6 +43,7 @@
         margin-top: $layout-small-padding;
         font-size: $base-font-size;
         color: $base-font-color;
+
     }
     .sns_login_title {
         font-size: $mid-font-size;
@@ -104,64 +105,18 @@
     }
 }
 .join_success_contianer {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
+    padding: 0 $layout-base-padding*2;
     background-color: #fff;
 
-    .join_success_box {
-        position: absolute;
-        top: 33.3333%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        padding: 0 $layout-base-padding*2;
-        box-sizing: border-box;
-    }
     .join_success_logo {
-        width: auto;
-        height: 98px;
+        height: 104px;
 
         .img {
             height: 100%;
-            object-fit: contain;
         }
-    }
-    .join_txt_box {
-        margin-top: $layout-large-padding;
-    }
-    .join_title {
-        font-size: $title-font-size;
-        color: $bold-font-color;
-        font-weight: bold;
-    }
-    .join_subtitle {
-        margin-top: $layout-small-padding;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        color: $base-font-color;
-        word-break: keep-all;
-    }
-    .btn_box {
-        margin-top: $layout-large-padding;
-    }
-    @media screen and (max-width: 359px) {
-        .join_title {
-            font-size: $large-font-size;
-        }
-        .join_subtitle {
-            font-size: $mid-font-size;
-        }
-    }
-}
-.find_password_contianer {
-    flex: 1;
-    background-color: #fff;
-    padding: $layout-large-padding*2 $layout-base-padding*2;
-
-    .title08 {
-        margin-bottom: $layout-base-padding;
-    }
-    .btn_box {
-        margin-top: $layout-large-padding;
     }
 }

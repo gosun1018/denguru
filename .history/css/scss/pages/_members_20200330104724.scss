@@ -104,21 +104,14 @@
     }
 }
 .join_success_contianer {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
+    padding: 0 $layout-base-padding*2 20vh;
     background-color: #fff;
 
-    .join_success_box {
-        position: absolute;
-        top: 33.3333%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        padding: 0 $layout-base-padding*2;
-        box-sizing: border-box;
-    }
     .join_success_logo {
-        width: auto;
         height: 98px;
 
         .img {
@@ -130,7 +123,7 @@
         margin-top: $layout-large-padding;
     }
     .join_title {
-        font-size: $title-font-size;
+        font-size: 24px;
         color: $bold-font-color;
         font-weight: bold;
     }
@@ -139,27 +132,6 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         color: $base-font-color;
-        word-break: keep-all;
-    }
-    .btn_box {
-        margin-top: $layout-large-padding;
-    }
-    @media screen and (max-width: 359px) {
-        .join_title {
-            font-size: $large-font-size;
-        }
-        .join_subtitle {
-            font-size: $mid-font-size;
-        }
-    }
-}
-.find_password_contianer {
-    flex: 1;
-    background-color: #fff;
-    padding: $layout-large-padding*2 $layout-base-padding*2;
-
-    .title08 {
-        margin-bottom: $layout-base-padding;
     }
     .btn_box {
         margin-top: $layout-large-padding;

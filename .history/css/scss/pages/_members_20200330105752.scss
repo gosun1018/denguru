@@ -139,7 +139,6 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         color: $base-font-color;
-        word-break: keep-all;
     }
     .btn_box {
         margin-top: $layout-large-padding;
@@ -151,17 +150,5 @@
         .join_subtitle {
             font-size: $mid-font-size;
         }
-    }
-}
-.find_password_contianer {
-    flex: 1;
-    background-color: #fff;
-    padding: $layout-large-padding*2 $layout-base-padding*2;
-
-    .title08 {
-        margin-bottom: $layout-base-padding;
-    }
-    .btn_box {
-        margin-top: $layout-large-padding;
     }
 }

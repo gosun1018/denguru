@@ -110,16 +110,16 @@
 
     .join_success_box {
         position: absolute;
-        top: 33.3333%;
+        top: 20%;
         left: 0;
-        transform: translateY(-50%);
         width: 100%;
         padding: 0 $layout-base-padding*2;
         box-sizing: border-box;
     }
+
     .join_success_logo {
         width: auto;
-        height: 98px;
+        height: 120px;
 
         .img {
             height: 100%;
@@ -139,7 +139,6 @@
         font-size: $base-font-size;
         line-height: $base-line-height;
         color: $base-font-color;
-        word-break: keep-all;
     }
     .btn_box {
         margin-top: $layout-large-padding;
@@ -151,17 +150,5 @@
         .join_subtitle {
             font-size: $mid-font-size;
         }
-    }
-}
-.find_password_contianer {
-    flex: 1;
-    background-color: #fff;
-    padding: $layout-large-padding*2 $layout-base-padding*2;
-
-    .title08 {
-        margin-bottom: $layout-base-padding;
-    }
-    .btn_box {
-        margin-top: $layout-large-padding;
     }
 }

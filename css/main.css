@@ -1285,6 +1285,8 @@ input[type="password"] {
     border-bottom: 1px solid #dbdbdb; }
     .header03_white .h_title {
       color: #414141; }
+  .header03 .icon {
+    height: 100%; }
 
 .pd_header03 {
   padding-top: 45px; }
@@ -4319,6 +4321,53 @@ input[type="password"] {
     margin-top: 8px; }
   .members_join_form .btn_join_success {
     margin-top: 32px; }
+
+.join_success_contianer {
+  position: relative;
+  flex: 1;
+  background-color: #fff; }
+  .join_success_contianer .join_success_box {
+    position: absolute;
+    top: 33.3333%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box; }
+  .join_success_contianer .join_success_logo {
+    width: auto;
+    height: 98px; }
+    .join_success_contianer .join_success_logo .img {
+      height: 100%;
+      object-fit: contain; }
+  .join_success_contianer .join_txt_box {
+    margin-top: 24px; }
+  .join_success_contianer .join_title {
+    font-size: 18px;
+    color: #141414;
+    font-weight: bold; }
+  .join_success_contianer .join_subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #414141;
+    word-break: keep-all; }
+  .join_success_contianer .btn_box {
+    margin-top: 24px; }
+  @media screen and (max-width: 359px) {
+    .join_success_contianer .join_title {
+      font-size: 16px; }
+    .join_success_contianer .join_subtitle {
+      font-size: 13px; } }
+
+.find_password_contianer {
+  flex: 1;
+  background-color: #fff;
+  padding: 48px 32px; }
+  .find_password_contianer .title08 {
+    margin-bottom: 16px; }
+  .find_password_contianer .btn_box {
+    margin-top: 24px; }
 
 .withdrawal_title_container {
   padding: 32px 16px;
