@@ -270,6 +270,11 @@ body {
   color: #414141;
   line-height: 1.4; }
 
+.paragraph02 {
+  font-size: 13px;
+  color: #414141;
+  line-height: 1.4; }
+
 .swiper-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 8px; }
@@ -1024,6 +1029,21 @@ input[type="password"] {
       max-width: 100%;
       max-height: 80%;
       object-fit: contain; }
+
+.popup_container05 {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  transition: bottom .4s ease-in; }
+  .popup_container05.show {
+    bottom: 0; }
+  .popup_container05 .img_box {
+    padding: 16px 16px 24px; }
+  .popup_container05 .btn_box {
+    padding: 0 16px 16px; }
 
 .popover_container {
   position: relative; }
@@ -1955,8 +1975,32 @@ input[type="password"] {
   margin-right: 16px; }
 
 .item_list04 .hash {
+  width: 27.7778vw;
+  max-width: 200px;
   font-size: 13px;
   color: #141414; }
+
+.item_list04 .item_name {
+  width: 27.7778vw;
+  max-width: 200px;
+  font-size: 13px;
+  color: #141414;
+  margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.4;
+  height: 2.8em; }
+
+.item_list04 .item_shop {
+  width: 27.7778vw;
+  max-width: 200px;
+  font-size: 12px;
+  color: #616161;
+  margin: 8px 0; }
 
 .item_list05 .item_box {
   padding: 16px 0;
@@ -3302,10 +3346,10 @@ input[type="password"] {
   border: 1px solid #dbdbdb;
   overflow-y: auto; }
   .search_breed_list::-webkit-scrollbar {
-    width: 10px; }
+    width: 8px; }
   .search_breed_list::-webkit-scrollbar-thumb {
-    background-color: rgba(121, 83, 208, 0.5);
-    border-radius: 10px; }
+    background-color: #9e9e9e;
+    border-radius: 8px; }
   .search_breed_list::-webkit-scrollbar-track {
     background-color: #f5f5f5; }
 
@@ -3661,6 +3705,28 @@ input[type="password"] {
     line-height: 1.4;
     color: #414141; }
   .noreview_message_container .btn_box {
+    margin-top: 16px; }
+
+.search_review_item_container {
+  margin-top: 16px;
+  background-color: #fff; }
+  .search_review_item_container .title04 {
+    margin-bottom: 16px; }
+
+.search_review_word_container {
+  margin-top: 16px;
+  padding: 0 0 8px;
+  background-color: #fff; }
+  .search_review_word_container .title04 {
+    margin-bottom: 8px; }
+  .search_review_word_container .swiper-container:before,
+  .search_review_word_container .swiper-container:after {
+    content: none; }
+
+.search_review_items_wrap {
+  padding: 24px 0;
+  background-color: #fff; }
+  .search_review_items_wrap .item_list03 .item_box:not(:nth-child(-n+3)) {
     margin-top: 16px; }
 
 .shop_shortcut_box {
@@ -5003,3 +5069,62 @@ input[type="password"] {
   @media screen and (max-width: 359px) {
     .change_password_form_container {
       padding: 0 16px; } }
+
+.info_access_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; }
+  .info_access_wrap .info_access_container {
+    flex: 1;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto; }
+  .info_access_wrap .info_access_title_box {
+    display: flex;
+    align-items: flex-start;
+    margin: 16px 16px 0;
+    padding: 16px 8px;
+    border-bottom: 1px solid #dbdbdb;
+    word-break: keep-all; }
+    .info_access_wrap .info_access_title_box .title08 {
+      margin-bottom: 8px; }
+  .info_access_wrap .logo_box {
+    flex-shrink: 0;
+    width: 56px;
+    margin-right: 16px;
+    font-size: 0; }
+    .info_access_wrap .logo_box .img {
+      width: 100%;
+      font-size: 10px; }
+  .info_access_wrap .info_access_box {
+    margin: 16px; }
+    .info_access_wrap .info_access_box .title06 {
+      font-weight: bold; }
+  .info_access_wrap .info_access_icon_box {
+    display: flex;
+    align-items: center;
+    margin-top: 16px; }
+    .info_access_wrap .info_access_icon_box .icon_box {
+      width: 48px;
+      margin-right: 8px;
+      font-size: 0; }
+      .info_access_wrap .info_access_icon_box .icon_box .img {
+        width: 100%;
+        font-size: 10px; }
+  .info_access_wrap .tit {
+    font-size: 14px;
+    color: #141414; }
+  .info_access_wrap .sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #414141; }
+  .info_access_wrap .paragraph02 {
+    margin: 0 16px;
+    word-break: keep-all; }
+  .info_access_wrap .txt_box02 {
+    margin: 16px 16px 0;
+    padding: 16px 0;
+    border-top: 1px solid #dbdbdb; }
+  .info_access_wrap .btn_box {
+    padding: 16px;
+    margin-top: auto; }

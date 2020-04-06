@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header02">
+            <h1 class="blind">댕구루 검색페이지</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'search.html'" class="btn_goback"><img src="images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+            <div class="h_search_box">
+                <form action="">
+                    <label for="inpSearch" class="lab_search"><img src="images/icon-search.svg" alt="검색" class="icon_search"></label>
+                    <input type="search" name="inpSearch" class="inp_search" id="inpSearch" value="영양제">
+                    <span class="search_result">
+                        1,234건
+                    </span>
+                    <button type="button" class="btn_del btn_linkstyle" id="btnDel"><img src="images/icon-del.svg" alt="취소" class="icon"></button>
+                </form>
+            </div>
+
+            
+        </header>
+    </div>
+</body>
+</html>
