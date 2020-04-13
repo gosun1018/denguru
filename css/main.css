@@ -898,6 +898,13 @@ input[type="password"] {
   .popup_container .popup_btn_box02 {
     margin-top: 16px;
     display: flex; }
+  .popup_container .popup_img_warn {
+    margin-bottom: 8px;
+    height: 64px;
+    text-align: center; }
+    .popup_container .popup_img_warn .img {
+      max-width: 100%;
+      max-height: 100%; }
 
 .popup_container02 {
   display: none;
