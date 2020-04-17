@@ -479,7 +479,8 @@ input[type="password"] {
   .inp_box02 .inp_textarea {
     padding: 8px;
     line-height: 1.4;
-    min-height: 56px; }
+    min-height: 56px;
+    resize: vertical; }
     .inp_box02 .inp_textarea:focus {
       outline: none;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
@@ -4832,9 +4833,9 @@ input[type="password"] {
 .complain_container {
   flex: 1;
   background-color: #fff;
-  padding: 24px 0; }
+  padding: 0 0 24px; }
   .complain_container .title08 {
-    margin: 0 16px 16px; }
+    margin: 24px 16px 16px; }
 
 .complain_announce_container {
   padding: 16px;
@@ -4882,6 +4883,20 @@ input[type="password"] {
       border: 1px solid #7953d0;
       color: #7953d0; }
 
+.complain_list_container .question_icon {
+  margin-right: 2px; }
+  .complain_list_container .question_icon .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top; }
+
+.complain_list_container .answer_icon {
+  margin-right: 2px; }
+  .complain_list_container .answer_icon .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top; }
+
 .complain_list_container .complain_date {
   margin-top: 8px;
   font-size: 12px;
@@ -4894,6 +4909,9 @@ input[type="password"] {
   transition: transform .2s; }
   .complain_list_container .btn_accordion.up {
     transform: rotate(-180deg); }
+
+.complain_list_container .btn_accordion_faq {
+  margin-top: 0; }
 
 .complain_list_container .complain_content_box {
   display: none; }

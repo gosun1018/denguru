@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 자주 하는 질문</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">자주하는 질문</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_main_resister.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="complain_container">
+                <div class="complain_list_container">
+                    <ul class="complain_list">
+                        <li class="complain_box">
+                            <div class="complain_title_box">
+                                <div class="complain_title_txt_box">
+                                    <div class="complain_title">
+                                        <span class="question_icon"><img src="/images/icon-q.svg" alt="q" class="icon"></span>
+                                        문의하기 제목입니다
+                                    </div>
+                                </div>
+                                <button class="js-btn-accordion btn_accordion btn_accordion_faq btn_linkstyle">
+                                    <img src="/images/icon-angle-down-gray.svg" alt="열기" class="icon">
+                                </button>
+                            </div>
+                            <div class="complain_content_box">
+                                <div class="complain_content">
+                                    <p>
+                                        <span class="answer_icon">A</span>
+                                        문의내용영역 두손을 같이 그들의 구하지 사막이다. 그들의 청춘을 미인을 주는 풀이 힘차게 칼이다. 하는 있으며, 평화스러운 산야에 보배를 있을 때문이다. 피가 곳으로 귀는 풀이 철환하였는가?
+                                    </p>
+                                    <p><br></p>
+                                    <p>
+                                        힘차게 싶이 것이 든 때까지 없으면 방지하는 이것이다. 속에서 없으면, 수 이것은 있는 주는 위하여 이것이다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="complain_box">
+                            <div class="complain_title_box">
+                                <div class="complain_title_txt_box">
+                                    <div class="complain_title">
+                                        <span class="question_icon"><img src="/images/icon-q.svg" alt="q" class="icon"></span>
+                                        문의하기 제목입니다 문의하기 제목입니다 문의하기 제목입니다 문의하기 제목입니다
+                                    </div>
+                                </div>
+                                <button class="js-btn-accordion btn_accordion btn_accordion_faq btn_linkstyle">
+                                    <img src="/images/icon-angle-down-gray.svg" alt="답변보기" class="icon">
+                                </button>
+                            </div>
+                            <div class="complain_content_box">
+                                <div class="complain_content">
+                                    <p>
+                                        문의내용영역 두손을 같이 그들의 구하지 사막이다. 그들의 청춘을 미인을 주는 풀이 힘차게 칼이다.
+                                    </p> 
+                                    <p>
+                                        하는 있으며, 평화스러운 산야에 보배를 있을 때문이다. 피가 곳으로 귀는 풀이 철환하였는가?
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="complain_box">
+                            <div class="complain_title_box">
+                                <div class="complain_title_txt_box">
+                                    <div class="complain_title">
+                                        <span class="question_icon"><img src="/images/icon-q.svg" alt="q" class="icon"></span>
+                                        문의하기 제목입니다
+                                    </div>
+                                </div>
+                                <button class="js-btn-accordion btn_accordion btn_accordion_faq btn_linkstyle">
+                                    <img src="/images/icon-angle-down-gray.svg" alt="답변보기" class="icon">
+                                </button>
+                            </div>
+                            <div class="complain_content_box">
+                                <div class="complain_content">
+                                    <p>
+                                        문의내용영역 두손을 같이 그들의 구하지 사막이다. 그들의 청춘을 미인을 주는 풀이 힘차게 칼이다.
+                                    </p> 
+                                    <p>
+                                        하는 있으며, 평화스러운 산야에 보배를 있을 때문이다. 피가 곳으로 귀는 풀이 철환하였는가?
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script:src -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.js-btn-accordion').on('click',function(){
+                $(this).parent('.complain_title_box').siblings('.complain_content_box').slideToggle();
+                $(this).toggleClass('up');
+                $(this).blur();
+            });
+
+        });
+    </script>
+</body>
+</html>
