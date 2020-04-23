@@ -185,7 +185,7 @@ body {
 .title01 {
   margin: 0 16px 24px;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 800;
   color: #141414; }
   .title01 .emph {
     color: #7953d0; }
@@ -202,7 +202,7 @@ body {
   padding: 0 16px;
   margin-bottom: 16px;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 800;
   color: #141414; }
   .title03 .emph {
     color: #7953d0; }
@@ -1136,7 +1136,7 @@ input[type="password"] {
     .pagination01 .page.active {
       background-color: #7953d0;
       color: #fff;
-      font-weight: 900; }
+      font-weight: 800; }
     .pagination01 .page.disabled {
       opacity: .5; }
   .pagination01 .page_link {
@@ -1583,7 +1583,7 @@ input[type="password"] {
     color: #616161; }
   .gnb_bottom .active .gnb_txt {
     color: #7953d0;
-    font-weight: 900; }
+    font-weight: 800; }
   .gnb_bottom .active:before {
     content: '';
     display: block;
@@ -2177,21 +2177,22 @@ input[type="password"] {
     .review_list01 .review_txt02 p {
       min-width: 1px;
       min-height: 1em; }
-  .review_list01 .review_img_box {
+  .review_list01 .review_img_box a {
+    display: block;
     width: 100%;
     padding-top: 56.25%;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
     position: relative; }
-    .review_list01 .review_img_box .img {
+    .review_list01 .review_img_box a .img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    .review_list01 .review_img_box:after {
+    .review_list01 .review_img_box a:after {
       content: '';
       position: absolute;
       top: 0;
@@ -2201,6 +2202,53 @@ input[type="password"] {
       box-sizing: border-box;
       border: 1px solid rgba(219, 219, 219, 0.5);
       border-radius: 5px; }
+  .review_list01 .review_img_box02 {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden; }
+    .review_list01 .review_img_box02 a {
+      display: block;
+      width: calc(50% - 2px);
+      height: 45vw;
+      max-height: 370px;
+      position: relative;
+      overflow: hidden;
+      position: relative; }
+      .review_list01 .review_img_box02 a .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .review_list01 .review_img_box02 a:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgba(219, 219, 219, 0.5);
+        border-radius: 5px; }
+      .review_list01 .review_img_box02 a:first-child:after {
+        border-radius: 5px 0 0 5px; }
+      .review_list01 .review_img_box02 a:last-child:after {
+        border-radius: 0 5px 5px 0; }
+    .review_list01 .review_img_box02 .more_img {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold; }
   .review_list01 .btn_box {
     margin-top: 16px;
     align-items: center; }
@@ -2806,7 +2854,7 @@ input[type="password"] {
     text-align: center; }
   .main_profile .profile_message01 {
     font-size: 17px;
-    font-weight: 900;
+    font-weight: 800;
     text-align: center;
     line-height: 1.4;
     color: #141414; }
@@ -3010,7 +3058,7 @@ input[type="password"] {
         background-color: #e6e4eb; }
     .popup_filter_container .popup_top_bar .btn_tab.active {
       color: #7953d0;
-      font-weight: 900; }
+      font-weight: 800; }
   .popup_filter_container .popup_main {
     flex: 1;
     overflow-y: auto;
@@ -3042,7 +3090,7 @@ input[type="password"] {
   color: #7953d0; }
 
 .filter_price_container .price {
-  font-weight: 900; }
+  font-weight: 800; }
 
 .filter_price_container .btn_filter_info_box {
   position: absolute;
@@ -3633,6 +3681,11 @@ input[type="password"] {
   .review_item_stars_contianer .noreview_message_container {
     padding: 16px 16px 0; }
 
+.review_item_top {
+  position: fixed;
+  padding-top: 45px;
+  z-index: 400; }
+
 .review_item_container {
   margin: 16px 0 0;
   background-color: #fff;
@@ -3947,7 +4000,7 @@ input[type="password"] {
     .load_gostore_container .load_txt_box .txt01 {
       font-size: 20px;
       color: #414141;
-      font-weight: 900; }
+      font-weight: 800; }
     .load_gostore_container .load_txt_box .txt02 {
       margin-top: 8px;
       font-size: 16px;
@@ -4029,7 +4082,7 @@ input[type="password"] {
     margin-right: 8px;
     text-align: center;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 800;
     color: #7953d0; }
   .store_list_rank .thumb_box {
     width: 56px;
@@ -4210,7 +4263,7 @@ input[type="password"] {
     text-align: center;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 900; }
+    font-weight: 800; }
     .mail_complete_container .mail_complete_txt01 .emph {
       color: #8054ea; }
   .mail_complete_container .mail_complete_txt02 {
@@ -4254,7 +4307,7 @@ input[type="password"] {
   .my_profile .user_nick {
     margin-top: 4px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 800;
     color: #141414; }
   .my_profile .user_pet_info {
     margin-top: 8px;
