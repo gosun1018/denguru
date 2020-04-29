@@ -833,21 +833,24 @@ input[type="password"] {
   right: 16px;
   z-index: 500; }
   .btn_fixed_box .btn_circle {
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    line-height: 46px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 38px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 8px; }
     .btn_fixed_box .btn_circle .icon {
-      width: 22px;
+      width: 18px;
       vertical-align: middle; }
+  .btn_fixed_box .btn-top {
+    display: none; }
   .btn_fixed_box_nognb {
     bottom: 32px; }
 
 @media screen and (min-width: 721px) {
   .btn_fixed_box {
-    right: calc(50% - 344px);
-    z-index: 500; } }
+    right: calc(50% - 344px); } }
 
 .popup_wrap {
   display: none;
@@ -2211,7 +2214,7 @@ input[type="password"] {
       display: block;
       width: calc(50% - 2px);
       height: 45vw;
-      max-height: 370px;
+      max-height: 324px;
       position: relative;
       overflow: hidden;
       position: relative; }
@@ -3684,7 +3687,10 @@ input[type="password"] {
 .review_item_top {
   position: fixed;
   padding-top: 45px;
-  z-index: 400; }
+  z-index: 400;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px; }
 
 .review_item_container {
   margin: 16px 0 0;
@@ -3862,7 +3868,7 @@ input[type="password"] {
     line-height: 1.4;
     height: 2.8em;
     height: auto;
-    max-height: 2.8; }
+    max-height: 2.8em; }
   .shop_item_info_container .item_discount {
     min-height: 1em;
     margin-top: 8px;
@@ -4585,8 +4591,6 @@ input[type="password"] {
     background-color: #1777f1; }
   .members_contianer .sns_kakao {
     background-color: #f9e200; }
-  .members_contianer .sns_google {
-    border: 1px solid #dbdbdb; }
 
 .members_join_form {
   padding: 32px 16px;

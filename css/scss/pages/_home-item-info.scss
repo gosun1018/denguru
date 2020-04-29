@@ -48,7 +48,7 @@
         color: $bold-font-color;
         @include multi-line-ellipsis($base-line-height,2);
         height: auto;
-        max-height: $base-line-height * 2;
+        max-height: $base-line-height * 2em;
     }
     .item_discount {
         min-height: 1em;

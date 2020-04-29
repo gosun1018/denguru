@@ -104,7 +104,7 @@
             display: block;
             width: calc(50% - 2px);
             height: 45vw;
-            max-height: 370px;
+            max-height: 324px;
             @include thumnail;
             @include thumnail-border($base-border-radius);
 

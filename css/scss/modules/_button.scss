@@ -159,14 +159,19 @@
     z-index: 500;
     
     .btn_circle {
-        @include circle(48px);
-        line-height: 46px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        display: block;
+        @include circle(40px);
+        line-height: 38px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        margin-top: 8px;
 
         .icon {
-            width: 22px;
+            width: 18px;
             vertical-align: middle;
         }
+    }
+    .btn-top {
+        display: none;
     }
     &_nognb {
         bottom: $layout-base-padding*2;
@@ -176,6 +181,5 @@
 @media screen and (min-width: 721px) {
     .btn_fixed_box {
         right: calc(50% - 344px);
-        z-index: 500;
     }
 }

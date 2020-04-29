@@ -22,8 +22,8 @@
                 </a>
             </div>
             <div class="h_btn">
-                <span class="has_alarm"><span class="blind">알림이 있습니다</span></span>
-                <a href="my_notification.html"><img src="/images/icon-bell.svg" alt="알림" class="icon"></a>
+                <!-- <span class="has_alarm"><span class="blind">알림이 있습니다</span></span> -->
+                <a href="my_notification.html"><img src="/images/icon-bell-with-dot.svg" alt="알림" class="icon"></a>
             </div>
         </header>
         <nav class="gnb_bottom">
@@ -1046,7 +1046,7 @@
                             <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
                         </div>
                     </li>
-                    <li class="review_card">
+                    <li class="review_card js-review-item">
                         <div class="review_profile_box">
                             <a href="home_review_user.html">
                                 <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
@@ -1086,10 +1086,13 @@
                     </li>
                 </ul>
                 <div class="btn_box_bottom">
-                    <a href="home_review_item.html" class="btn_more">더보기 <img src="/images/icon-angle-right.svg" alt=">" class="icon"></a>
+                    <a href="" class="btn_more js-btn-review-list-more">더보기 <img src="/images/icon-angle-right.svg" alt=">" class="icon"></a>
                 </div>
             </section>
-            <div class="pd_gnb_bottom"></div>
+            <div class="pd_gnb_bottom" style="height: 24px;background-color: #fff;"></div>
+            <div class="btn_fixed_box">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
             <!-- .main end -->
         </div>
 
@@ -1179,7 +1182,31 @@
                 changeBtnStyle(this);
             });
         })
+
+        // 단순 보여주기용 - 리뷰섹션에서 더보기 클릭시 5개더 노출 
+        var elReviewItem = document.querySelector('.js-review-item');
+        var elBtnReviewMore = document.querySelector('.js-btn-review-list-more');
+        
+        elBtnReviewMore.addEventListener('click',function(e){
+            e.preventDefault();
+            for (let index = 0; index < 5; index++) {
+                var addItem = elReviewItem.cloneNode(true);
+                var addItemBtn = addItem.querySelector('.btn');
+                elReviewItem.insertAdjacentElement('afterend', addItem);
+                addItem.querySelector('.num').textContent = Number(addItem.querySelector('.num').textContent) + 5 - index;
+
+                if(addItemBtn.classList.contains(BTN_MAIN_LINE)){
+                    addItemBtn.classList.remove(BTN_MAIN_LINE);
+                    addItemBtn.classList.add(BTN_NORMAL_LINE);
+                    addItemBtn.querySelector('.icon').setAttribute('src',hrefHeartO);
+                    addItemBtn.blur();
+                }
+            }
+            this.classList.add('blind');
+            // console.log(addItem);
+        });
     </script>
+    <script src="js/btn_top.js"></script>
     <!-- <script src="js/header.js"></script> -->
 </body>
 </html>
