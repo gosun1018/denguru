@@ -1,13 +1,13 @@
 $(window).on('scroll', function(){
     var scrollPos = $(window).scrollTop();
 
-    if(scrollPos >= 400) {
+    if(scrollPos >= 450) {
         $('#btnTop').fadeIn();
     }else {
         $('#btnTop').fadeOut();
     }
 
-    console.log(scrollPos);
+    // console.log(scrollPos);
 });
 
 $('#btnTop').on('click', function(){
