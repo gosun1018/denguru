@@ -23,7 +23,7 @@
                 <h2 class="title08">1:1 문의하기</h2>
 
                 <div class="complain_write_container">
-                    <form onsubmit="return false;">
+                    <form onsubmit="onSubmitForm()">
                         <div class="inp_box04">
                             <div class="inp_txt_box">
                                 <label for="complainEmail" class="lab_txt">이메일</label>
@@ -92,6 +92,12 @@
 
             boxFilename.textContent = filename;
         });
+
+        function onSubmitForm(){
+            event.preventDefault();
+            alert('문의사항이 접수되었습니다')
+            location.href = '/my_main_resister.html';
+        };
 
     </script>
 </body>

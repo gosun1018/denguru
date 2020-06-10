@@ -27,6 +27,7 @@ input[type="password"] {
     }
     .lab {
         font-size: $large-font-size;
+        color: $bold-font-color;
     }
     .lab_small {
         font-size: $base-font-size;
@@ -44,6 +45,7 @@ input[type="password"] {
         border-radius: $base-border-radius;
         box-sizing: border-box;
         font-size: $large-font-size;
+        color: $bold-font-color;
     }
 
     .radio_container {

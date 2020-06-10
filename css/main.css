@@ -326,7 +326,8 @@ input[type="password"] {
   .inp_box01 .lab_box {
     margin-bottom: 16px; }
   .inp_box01 .lab {
-    font-size: 16px; }
+    font-size: 16px;
+    color: #141414; }
   .inp_box01 .lab_small {
     font-size: 14px;
     text-indent: 14px; }
@@ -340,7 +341,8 @@ input[type="password"] {
     border: 1px solid #bdbdbd;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 16px; }
+    font-size: 16px;
+    color: #141414; }
   .inp_box01 .radio_container {
     text-align: center;
     font-size: 0; }
@@ -2157,7 +2159,8 @@ input[type="password"] {
     color: #414141; }
   .review_list01 .review_txt_box {
     display: flex;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    color: #141414; }
     .review_list01 .review_txt_box .icon_box {
       margin: 0 16px;
       flex-shrink: 0; }
@@ -2357,7 +2360,8 @@ input[type="password"] {
   .review_list02 .review_txt_box {
     display: flex;
     padding: 0 16px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    color: #141414; }
     .review_list02 .review_txt_box .icon_box {
       margin-right: 16px;
       flex-shrink: 0; }
@@ -2532,7 +2536,8 @@ input[type="password"] {
   display: flex;
   padding: 0 16px;
   margin: 16px;
-  margin-right: 0; }
+  margin-right: 0;
+  color: #141414; }
   .review_list03 .review_txt_box .icon_box {
     margin-right: 8px;
     flex-shrink: 0; }
@@ -2836,7 +2841,8 @@ input[type="password"] {
     margin: 16px 0;
     text-align: center;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #141414; }
   .main_profile .profile_tag_list {
     padding: 0 32px;
     text-align: center;
@@ -2992,7 +2998,8 @@ input[type="password"] {
     line-height: 1.4;
     height: 2.8em;
     height: auto;
-    max-height: 2.8em; }
+    max-height: 2.8em;
+    color: #414141; }
     .search_result_top_bar .filter_info .icon {
       width: 1.1em;
       vertical-align: middle; }
@@ -3004,7 +3011,8 @@ input[type="password"] {
   .search_result_top_bar .select_sort {
     width: 100%;
     height: 100%;
-    border: none; }
+    border: none;
+    color: #141414; }
 
 .search_result_items {
   padding: 24px 0; }
@@ -3305,7 +3313,8 @@ input[type="password"] {
     .pet_profile01 .inp_profile_box .lab {
       display: block;
       margin-bottom: 8px;
-      font-size: 12px; }
+      font-size: 12px;
+      color: #414141; }
       .pet_profile01 .inp_profile_box .lab .icon {
         width: 1.2em;
         vertical-align: middle; }
@@ -3670,7 +3679,8 @@ input[type="password"] {
   .review_item_stars_contianer .score {
     font-size: 24px;
     font-weight: bold;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    color: #141414; }
   .review_item_stars_contianer .stars {
     margin-left: 8px;
     font-size: 0; }
@@ -4823,7 +4833,8 @@ input[type="password"] {
   .order_item_info_container .order_item_price {
     margin-top: 4px;
     font-size: 16px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #141414; }
   .order_item_info_container .order_item_delivery_number {
     margin-top: 8px;
     font-size: 12px;
