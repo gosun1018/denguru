@@ -165,3 +165,27 @@
         margin-top: $layout-large-padding;
     }
 }
+
+.edit_info_wrap {
+    flex: 1;
+    background-color: #fff;
+    padding: $layout-large-padding $layout-base-padding;
+
+    :first-child {
+        margin-top: 0;
+    }
+    .edit_notice {
+        font-size: $mid-font-size;
+        color: $light-font-color;
+    }
+    .edit_notice_list {
+        margin-top: $layout-small-padding;
+    }
+    .edit_notice_item {
+        padding-left: 5px;
+        text-indent: -5px;
+        line-height: $base-line-height;
+        letter-spacing: -0.05em;
+        margin-top: 4px;
+    }
+}

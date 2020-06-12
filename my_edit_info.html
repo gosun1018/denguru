@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보수정</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">회원정보수정</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_setting.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="edit_info_wrap">
+                <form action="">
+                    <div class="inp_box01">
+                        <div class="lab_box">
+                            <label for="userName" class="lab">이름</label>
+                            <!-- <span class="inp_noti">* 필수 입력창입니다.</span> -->
+                        </div>
+                        <div class="btn_box">
+                            <input type="text" name="userName" id="userName" class="inp inp_txt" value="">
+                            <button type="button" class="btn btn_main " style="white-space: nowrap;font-size: 14px;margin-left: 8px;">본인인증</button>
+                        </div>
+                        <div class="edit_notice">
+                            <ul class="edit_notice_list">
+                                <li class="edit_notice_item">
+                                    · 개명하신 경우 , 본인인증을 하면 자동으로 이름이 변경됩니다.
+                                </li>
+                                <li class="edit_notice_item">
+                                    · 통신사에 본인 명의로 휴대폰이 가입 되어 있는지 확인 해 주세요.
+                                </li>
+                                <li class="edit_notice_item">
+                                    · 본인인증할 때 입력하신 정보로 이름과 휴대폰 번호가 모두 변경됩니다.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inp_box01">
+                        <div class="lab_box">
+                            <label for="userName" class="lab">전화번호</label>
+                            <!-- <span class="inp_noti">* 필수 입력창입니다.</span> -->
+                        </div>
+                        <div class="btn_box">
+                            <input type="tel" name="userName" id="userName" class="inp inp_txt" value="">
+                            <button type="button" class="btn btn_main " style="white-space: nowrap;font-size: 14px;margin-left: 8px;">인증받기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
