@@ -95,6 +95,7 @@
     font-size: $mid-font-size;
     color: $base-font-color;
     line-height: $base-line-height;
+    word-break: keep-all;
 
     .emph01 {
         font-size: 1.076em;

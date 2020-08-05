@@ -257,7 +257,8 @@ body {
   border-left: 1px solid #bdbdbd;
   font-size: 13px;
   color: #414141;
-  line-height: 1.4; }
+  line-height: 1.4;
+  word-break: keep-all; }
   .sub_title01 .emph01 {
     font-size: 1.076em;
     font-weight: bold;
@@ -2843,6 +2844,10 @@ input[type="password"] {
     font-size: 18px;
     font-weight: bold;
     color: #141414; }
+  .main_profile .profile_name_sm {
+    font-size: 14px;
+    font-weight: normal;
+    color: #414141; }
   .main_profile .profile_tag_list {
     padding: 0 32px;
     text-align: center;
@@ -2857,7 +2862,16 @@ input[type="password"] {
     line-height: 26px;
     padding: 0 13px;
     background-color: #f3f1f6;
-    color: #414141; }
+    color: #414141;
+    box-sizing: border-box; }
+  .main_profile .profile_tag_list_feathers .profile_tag {
+    background-color: #e6dff6; }
+  .main_profile .profile_tag_list_allergy .profile_tag {
+    background-color: #ffe6ed;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
   .main_profile .resister_btn_box {
     margin: 16px 16px 0;
     text-align: center; }
@@ -4690,6 +4704,27 @@ input[type="password"] {
     color: #616161; }
   .edit_info_wrap .inp_txt_box.inp_txt_box_warn + .inp_message {
     color: #ff4d7e; }
+
+.identity_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+  background: #fff; }
+  .identity_container .identity_icon_container {
+    margin-top: -40%; }
+  .identity_container .identity_icon_box {
+    width: 108px;
+    margin: 0 auto; }
+  .identity_container .identity_text_box {
+    margin-top: 16px;
+    text-align: center;
+    color: #414141;
+    font-size: 14px;
+    line-height: 1.4; }
+  .identity_container .identity_btn_box {
+    margin-top: 24px; }
 
 .withdrawal_title_container {
   padding: 32px 16px;

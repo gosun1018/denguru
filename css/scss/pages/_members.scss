@@ -198,3 +198,30 @@
         color: #ff4d7e;
     }
 }
+.identity_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    padding: 0 $layout-base-padding*2;
+    background: #fff;
+
+    .identity_icon_container {
+        margin-top: -40%;
+    }
+    .identity_icon_box {
+        width: 108px;
+        margin: 0 auto;
+    }
+    .identity_text_box {
+        margin-top: $layout-base-padding;
+        text-align: center;
+        color: $base-font-color;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
+    .identity_btn_box {
+        margin-top: $layout-large-padding;
+    }
+}

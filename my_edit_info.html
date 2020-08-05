@@ -27,8 +27,8 @@
                             <!-- <span class="inp_noti">* 필수 입력창입니다.</span> -->
                         </div>
                         <div class="btn_box">
-                            <input type="text" name="userName" id="userName" class="inp inp_txt" value="">
-                            <button type="button" class="btn btn_main " style="width: 65px;white-space: nowrap;font-size: 14px;margin-left: 8px;">본인인증</button>
+                            <input type="text" name="userName" id="userName" class="inp inp_txt" value="홍길동" readonly>
+                            <a href="my_identity_verification.html" class="btn btn_main" style="padding: 1px 6px;line-height: 36px;width: 65px;white-space: nowrap;font-size: 14px;margin-left: 8px;">본인인증</a>
                         </div>
                         <div class="edit_notice">
                             <ul class="edit_notice_list">
@@ -46,23 +46,23 @@
                     </div>
                     <div class="inp_box01">
                         <div class="lab_box">
-                            <label for="joinTel" class="lab">전화번호</label>
+                            <label for="joinTel" class="lab">휴대폰 번호</label>
                             <!-- <span class="inp_noti">* 필수 입력창입니다.</span> -->
                         </div>
                         <div class="btn_box">
-                            <input type="tel" name="joinTel" id="joinTel" class="inp inp_txt inp_txt_box" value="" placeholder="전화번호 입력" label="전화번호">
-                            <button type="button" class="btn btn_main " id="btnSendAuthenticationNumber" style="width: 65px;white-space: nowrap;font-size: 14px;margin-left: 8px; flex-shrink: 0;">인증받기</button>
+                            <input type="tel" name="joinTel" id="joinTel" class="inp inp_txt inp_txt_box" value="" placeholder="휴대폰 번호 입력" label="휴대폰 번호">
+                            <button type="button" class="btn btn_main " id="btnSendAuthenticationNumber" style="width: 65px;white-space: nowrap;font-size: 14px; margin-left: 8px; flex-shrink: 0;">인증받기</button>
                         </div>
-                        <div class="inp_message"></div>
+                        <div class="inp_message" style="    color: #ff4d7e;"></div>
                     </div>
                     <div class="inp_box01 vis_hidden inpbox_authentication_number">
                         <div class="lab_box">
-                            <label for="userName" class="lab">인증번호</label>
+                            <label for="joinAuthenticationNumber" class="lab">인증번호</label>
                             <!-- <span class="inp_noti">* 필수 입력창입니다.</span> -->
                         </div>
                         <div class="btn_box">
-                            <input type="tel" name="userName" id="userName" class="inp inp_txt" value="" placeholder="인증번호 입력">
-                            <button type="button" class="btn btn_main " style="width: 65px;white-space: nowrap;font-size: 14px;margin-left: 8px;">인증완료</button>
+                            <input type="number" name="joinAuthenticationNumber" id="joinAuthenticationNumber" class="inp inp_txt" value="" placeholder="인증번호 입력" label="인증번호">
+                            <button type="button" id="btnCheckAuthenticationNumber" class="btn btn_main " style="width: 65px;white-space: nowrap;font-size: 14px;margin-left: 8px;">인증완료</button>
                         </div>
                         <div class="inp_message authentication_time"></div>
                     </div>
@@ -211,6 +211,7 @@
                     $(this).text('재전송');
                     $joinAthntNumber.focus();
                     timerAthntNumber();
+                    $joinTel.parents('.btn_box').next('.inp_message').text('');
                     return true;
                 }
             }
@@ -228,10 +229,11 @@
                     return false;
                 } else if(authenticationNumberJ.test(inpValue)) {
                     removeErrorStyle($joinAthntNumber, PRIMARY_MSG.authenticationNumberForm);
-                    $('.inpbox_authentication_number').removeClass('vis_hidden ');
                     $joinAthntNumber.focus();
                     $('.authentication_time').remove();
                     $joinAthntNumber.blur();
+                    alert('휴대폰 번호 변경이 완료되었습니다');
+                    location.href = 'my_main_resister.html';
                     return true;
                 }
             }
