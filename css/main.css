@@ -96,7 +96,10 @@ body {
     font-size: 12px; }
 
 .vis_hidden {
-  visibility: hidden; }
+  visibility: hidden !important; }
+
+.disnone {
+  display: none !important; }
 
 .sect01 {
   padding: 48px 0 0;
@@ -255,16 +258,18 @@ body {
   padding-left: 8px;
   margin: 0 16px;
   border-left: 1px solid #bdbdbd;
-  font-size: 13px;
+  font-size: 14px;
   color: #414141;
   line-height: 1.4;
   word-break: keep-all; }
   .sub_title01 .emph01 {
-    font-size: 1.076em;
-    font-weight: bold;
+    font-size: 1.14285em;
+    font-weight: 800;
     color: #7953d0; }
   .sub_title01 .emph02 {
-    font-weight: bold; }
+    font-size: 1.07143em;
+    font-weight: bold;
+    color: #ff4d7e; }
 
 .paragraph01 {
   font-size: 14px;
@@ -365,6 +370,19 @@ input[type="password"] {
     border-color: #ff4d7e;
     color: #fff;
     font-weight: bold; }
+  .inp_box01 .radio_box02 {
+    margin-bottom: 8px; }
+  .inp_box01 .lab_radio02 {
+    display: inline-block;
+    padding-left: 26px;
+    line-height: 20px;
+    background-image: url(/images/icon-radio-uncheck.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: #414141; }
+  .inp_box01 .inp_radio02:checked + .lab_radio02 {
+    background-image: url(/images/icon-radio-check.svg); }
   .inp_box01 .inp_check_box {
     margin-top: 12px;
     text-align: center; }
@@ -4620,6 +4638,9 @@ input[type="password"] {
   padding: 32px 16px;
   background-color: #fff;
   flex: 1; }
+  .members_join_form .sub_txt {
+    margin-top: 8px;
+    word-break: keep-all; }
   .members_join_form .inp_box04 .inp_txt_box {
     margin-top: 16px; }
   .members_join_form .join_form_agree_container {

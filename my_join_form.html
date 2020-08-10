@@ -58,7 +58,7 @@
                             <div class="inp_box04">
                                 <div class="inp_txt_box">
                                     <label for="joinPasswordCheck" class="lab_txt">비밀번호 확인</label>
-                                    <input type="password" class="inp_txt js-input" id="joinPasswordCheck" label="비밀번호 확인">
+                                    <input type="password" class="inp_txt js-input" id="joinPasswordCheck" label="비밀번호 확인" disabled>
                                     <button type="button" class="btn_inp_txt btn_linkstyle js-btn-passoword-toggle"><img src="/images/icon-eye.svg" alt="" class="icon"></button>
                                 </div>
                                 <div class="txt_right inp_message"></div>
@@ -345,6 +345,7 @@
                     $(this).text('재전송');
                     $joinAthntNumber.focus();
                     timerAthntNumber();
+                    $('#btnSendAuthenticationNumber').off('click');
                     return true;
                 }
             }

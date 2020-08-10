@@ -38,7 +38,10 @@ body {
     }
 }
 .vis_hidden {
-    visibility: hidden;
+    visibility: hidden!important;
+}
+.disnone {
+    display: none!important;
 }
 .sect01 {
     padding: $layout-base-padding*3 0 0;

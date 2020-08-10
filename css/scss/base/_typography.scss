@@ -92,18 +92,20 @@
     padding-left: $layout-small-padding;
     margin: 0 $layout-base-padding;
     border-left: $base-border;
-    font-size: $mid-font-size;
+    font-size: $base-font-size;
     color: $base-font-color;
     line-height: $base-line-height;
     word-break: keep-all;
 
     .emph01 {
-        font-size: 1.076em;
-        font-weight: bold;
+        font-size: 1.14285em;
+        font-weight: 800;
         color: $main-font-color;
     }
     .emph02 {
+        font-size: 1.07143em;
         font-weight: bold;
+        color: $accent-font-color;
     }
 }
 .paragraph01 {

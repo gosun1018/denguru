@@ -72,6 +72,22 @@ input[type="password"] {
         color: $gray-0;
         font-weight: bold;
     }
+    .radio_box02 {
+        margin-bottom: $layout-small-padding;
+    }
+    .lab_radio02 {
+        display: inline-block;
+        padding-left: 26px;
+        line-height: 20px;
+        background-image: url(/images/icon-radio-uncheck.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: $large-font-size;
+        color: $base-font-color;
+    }
+    .inp_radio02:checked + .lab_radio02 {
+        background-image: url(/images/icon-radio-check.svg);
+    }
     .inp_check_box {
         margin-top: 12px;
         text-align: center;

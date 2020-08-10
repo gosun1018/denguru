@@ -85,6 +85,10 @@
     background-color: $gray-0;
     flex: 1;
     
+    .sub_txt {
+        margin-top: $layout-small-padding;
+        word-break: keep-all;
+    }
     .inp_box04 .inp_txt_box {
         margin-top: $layout-base-padding;
     }
