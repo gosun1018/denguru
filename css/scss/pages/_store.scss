@@ -90,6 +90,9 @@
     }
 }
 .store_list_favorite {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding-top: $layout-base-padding;
     background-color: $gray-0;
 
@@ -159,6 +162,36 @@
         font-size: $small-font-size;
         color: $gray-0;
         background-color: $accent-color;
+    }
+    .favorite_nodata {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+    .favorite_nodata_img_box {
+        margin: 0 $layout-base-padding*2;
+        text-align: center;
+        font-size: 0;
+    }
+    .favorite_nodata_img {
+        width: 100%;
+        max-width: 430px;
+        font-size: 10px;
+    }
+    .favorite_nodata_login_box {
+        width: 100%;
+        margin-top: $layout-large-padding;
+    }
+    .favorite_btn_login {
+        margin-top: $layout-base-padding;
+        max-width: 200px;
+    }
+    .favorite_nodata_login_txt {
+        font-size: $base-font-size;
+        color: $light-font-color;
     }
 }
 .store_info_container {

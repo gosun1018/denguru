@@ -923,6 +923,15 @@ input[type="password"] {
   .popup_container .popup_btn_box02 {
     margin-top: 16px;
     display: flex; }
+  .popup_container .popup_btn_box_head {
+    display: flex;
+    margin-bottom: 8px;
+    margin-top: -8px; }
+  .popup_container .btn_popup_close_top {
+    width: 24px;
+    height: 24px; }
+    .popup_container .btn_popup_close_top .icon_close {
+      width: 100%; }
   .popup_container .popup_img_warn {
     margin-bottom: 8px;
     height: 64px;
@@ -930,6 +939,11 @@ input[type="password"] {
     .popup_container .popup_img_warn .img {
       max-width: 100%;
       max-height: 100%; }
+  .popup_container .popup_service_img_box {
+    width: 100%;
+    margin: 0 auto 8px; }
+  .popup_container .popup_service_img {
+    width: 100%; }
 
 .popup_container02 {
   display: none;
@@ -4165,6 +4179,9 @@ input[type="password"] {
     max-height: 2.8em; }
 
 .store_list_favorite {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding-top: 16px;
   background-color: #fff; }
   .store_list_favorite .title_favorite {
@@ -4230,6 +4247,30 @@ input[type="password"] {
     font-size: 12px;
     color: #fff;
     background-color: #ff4d7e; }
+  .store_list_favorite .favorite_nodata {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%; }
+  .store_list_favorite .favorite_nodata_img_box {
+    margin: 0 32px;
+    text-align: center;
+    font-size: 0; }
+  .store_list_favorite .favorite_nodata_img {
+    width: 100%;
+    max-width: 430px;
+    font-size: 10px; }
+  .store_list_favorite .favorite_nodata_login_box {
+    width: 100%;
+    margin-top: 24px; }
+  .store_list_favorite .favorite_btn_login {
+    margin-top: 16px;
+    max-width: 200px; }
+  .store_list_favorite .favorite_nodata_login_txt {
+    font-size: 14px;
+    color: #616161; }
 
 .store_info_container {
   position: fixed;
@@ -5148,6 +5189,8 @@ input[type="password"] {
     font-size: 10px; }
 
 .pick_items_wrap {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: #fff; }
   .pick_items_wrap .title07 {
@@ -5169,6 +5212,30 @@ input[type="password"] {
   .pick_items_wrap .store_box .icon {
     height: 20px;
     vertical-align: middle; }
+  .pick_items_wrap .pick_nodata {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%; }
+  .pick_items_wrap .pick_nodata_img_box {
+    margin: 0 32px;
+    font-size: 0;
+    text-align: center; }
+  .pick_items_wrap .pick_nodata_img {
+    width: 100%;
+    max-width: 430px;
+    font-size: 10px; }
+  .pick_items_wrap .pick_nodata_login_box {
+    width: 100%;
+    margin-top: 24px; }
+  .pick_items_wrap .pick_btn_login {
+    margin-top: 16px;
+    max-width: 200px; }
+  .pick_items_wrap .pick_nodata_login_txt {
+    font-size: 14px;
+    color: #616161; }
 
 .pick_inp_check_box {
   position: absolute;

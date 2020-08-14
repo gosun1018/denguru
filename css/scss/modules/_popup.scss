@@ -57,6 +57,19 @@
         margin-top: $layout-base-padding;
         display: flex;
     }
+    .popup_btn_box_head {
+        display: flex;
+        margin-bottom: $layout-small-padding;
+        margin-top: $layout-small-padding * -1;
+    }
+    .btn_popup_close_top {
+        width: 24px;
+        height: 24px;
+        
+        .icon_close {
+            width: 100%;
+        }
+    }
     .popup_img_warn {
         margin-bottom: $layout-small-padding;
         height: 64px;
@@ -67,6 +80,14 @@
             max-height: 100%;
         }
     }
+    .popup_service_img_box {
+        width: 100%;
+        margin: 0 auto $layout-small-padding;
+    }
+    .popup_service_img {
+        width: 100%;
+    }
+
 }
 .popup_container02 {
     display: none;
