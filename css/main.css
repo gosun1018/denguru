@@ -4163,13 +4163,15 @@ input[type="password"] {
     text-overflow: ellipsis;
     overflow: hidden; }
   .store_list_rank .store_name {
+    margin-bottom: 8px;
     font-size: 13px;
     color: #141414; }
   .store_list_rank .store_list_tag_box {
     margin-top: 4px;
     width: 100%;
     font-size: 12px;
-    color: #747474; }
+    color: #747474;
+    word-spacing: 0.05em; }
     .store_list_rank .store_list_tag_box01 {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -4219,25 +4221,29 @@ input[type="password"] {
       height: 100%;
       object-fit: contain; }
   .store_list_favorite .txt_box {
-    flex: 1; }
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden; }
   .store_list_favorite .store_name {
     font-size: 13px;
     color: #141414; }
-  .store_list_favorite .store_tag {
+  .store_list_favorite .store_list_tag_box {
     margin-top: 4px;
+    width: 100%;
     font-size: 12px;
-    line-height: 1.4;
-    color: #616161;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    line-height: 1.4;
-    height: 2.8em;
-    height: auto;
-    max-height: 2.8em; }
+    color: #747474; }
+    .store_list_favorite .store_list_tag_box01 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .store_list_favorite .store_list_tag_box02 {
+      line-height: 1.2; }
+  .store_list_favorite .store_list_tag_size {
+    color: #0095c6; }
+  .store_list_favorite .store_list_tag_category {
+    color: #7953d0; }
+  .store_list_favorite .store_list_tag_breed {
+    color: #414141; }
   .store_list_favorite .has_new_item {
     position: absolute;
     top: -4px;
@@ -4307,16 +4313,17 @@ input[type="password"] {
     font-size: 18px;
     font-weight: bold;
     color: #141414; }
-  .store_info_container .store_tag01 {
+  .store_info_container .store_info_tag_box {
     margin-top: 4px;
     font-size: 13px;
-    color: #616161;
+    color: #747474;
     line-height: 1.2; }
-  .store_info_container .store_tag02 {
-    margin-top: 4px;
-    font-size: 13px;
-    color: #0095c6;
-    line-height: 1.2; }
+  .store_info_container .store_info_tag_size {
+    color: #0095c6; }
+  .store_info_container .store_info_tag_category {
+    color: #7953d0; }
+  .store_info_container .store_info_tag_breed {
+    color: #414141; }
   .store_info_container .btn_bookmark {
     flex-shrink: 0;
     margin-left: 8px; }

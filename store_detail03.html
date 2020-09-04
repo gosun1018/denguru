@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DENGURU:: 스토어</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .store_info_container .store_info_tag_size {
+            display: inline-block;
+            color: #616161; 
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+        .store_info_container .store_info_tag_size + .store_info_tag_category {
+            margin-left: 3px;
+        }
+        .store_info_container .store_info_tag_category {
+            display: inline-block;
+            color: #616161; 
+            /* background-color: #f4f4f4; */
+            /* border-radius: 3px; */
+            padding: 2px 0;
+        }
+        .store_info_container .store_info_tag_breed {
+            color: #0095c6; 
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
@@ -24,15 +46,14 @@
                     <div class="store_info_txt_box">
                         <a href="go_store02.html" class="store_name">바잇미</a>
                         <div class="store_info_tag_box store_info_tag_box01">
-                            <span class="store_info_tag store_info_tag_size">소형견</span>,
-                            <span class="store_info_tag store_info_tag_size">중형견</span>,
+                            <span class="store_info_tag store_info_tag_size">소형견</span>
+                            <span class="store_info_tag store_info_tag_size">중형견</span>
                             <span class="store_info_tag store_info_tag_category">패션</span>,
                             <span class="store_info_tag store_info_tag_category">산책용품</span>,
                             <span class="store_info_tag store_info_tag_category">장난감</span>
                         </div>
                         <div class="store_info_tag_box store_info_tag_box02">
-                            <span class="store_info_tag store_info_tag_breed">말티즈, 비숑, 푸들</span>
-                            들이 좋아해요
+                            <span class="store_info_tag store_info_tag_breed">말티즈, 비숑, 푸들</span>들이 좋아해요
                         </div>
                     </div>
                     <button type="button" class="btn_linkstyle btn_bookmark" id="btnBookmark">

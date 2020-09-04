@@ -79,6 +79,7 @@
         overflow: hidden;
     }
     .store_name {
+        margin-bottom: $layout-small-padding;
         font-size: $mid-font-size;
         color: $bold-font-color;
     }
@@ -87,6 +88,7 @@
         width: 100%;
         font-size: $small-font-size;
         color: $x-light-font-color;
+        word-spacing: 0.05em;
 
         &01 {
             @include one-line-ellipsis;
@@ -146,19 +148,30 @@
     }
     .txt_box {
         flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .store_name {
         font-size: $mid-font-size;
         color: $bold-font-color;
     }
-    .store_tag {
+    .store_list_tag_box {
         margin-top: 4px;
+        width: 100%;
         font-size: $small-font-size;
-        line-height: $base-line-height;
-        color: $light-font-color;
-        @include multi-line-ellipsis($base-line-height, 2);
-        height: auto;
-        max-height: $base-line-height * 2em;
+        color: $x-light-font-color;
+
+        &01 {
+            @include one-line-ellipsis;
+        }
+        &02 {
+            line-height: $narrow-line-height;
+        }
+    }
+    .store_list_tag {
+        &_size {color: $primary-font-color;}
+        &_category {color:$main-font-color}
+        &_breed {color:$base-font-color}
     }
     .has_new_item {
         position: absolute;
@@ -237,17 +250,16 @@
         font-weight: bold;
         color: $bold-font-color;
     }
-    .store_tag01 {
+    .store_info_tag_box {
         margin-top: 4px;
         font-size: $mid-font-size;
-        color: $light-font-color;
+        color: $x-light-font-color;
         line-height: $narrow-line-height;
     }
-    .store_tag02 {
-        margin-top: 4px;
-        font-size: $mid-font-size;
-        color: $primary-font-color;
-        line-height: $narrow-line-height;
+    .store_info_tag {
+        &_size {color: $primary-font-color;}
+        &_category {color:$main-font-color}
+        &_breed {color:$base-font-color}
     }
     .btn_bookmark {
         flex-shrink: 0;
