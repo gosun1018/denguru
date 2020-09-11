@@ -7,11 +7,16 @@
     border-bottom: $light-border;
 
     .profile_img {
+        width: 160px;
+        height: 160px;
         position: relative;
-        @include circle(160px); 
-        overflow: hidden;  
         margin: 0 auto;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+        .img_box {
+            @include circle(160px); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
     }
     .inp_profile_box {
         width: 100%;
@@ -31,19 +36,34 @@
                 vertical-align: middle;
             }
         }
+        &.inp_has_profile {
+            width: auto;
+            top: auto;
+            bottom: 0;
+            left: auto;
+            right: 0;
+        }
     }
     .profile_img.has_img {
         .img_box:after {
             content: '';
             display: block;
             @include circle(100%); 
-            background-color: rgba(0,0,0,0.5);
+            // background-color: rgba(0,0,0,0.5);
             position: absolute;
             top: 0;
             left: 0;
         }
         .lab {
             color: $gray-0;
+        }
+    }
+    .btn_change_img {
+        width: 44px;
+        height: 44px;
+
+        .img {
+            width: 100%;
         }
     }
 }

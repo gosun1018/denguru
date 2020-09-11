@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DENGURU :: 마이펫정보등록</title>
+    <title>DENGURU :: 마이펫정보수정</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -12,7 +12,7 @@
 <body>
     <div class="wrap">
         <header class="header03">
-            <h1 class="h_title">마이펫 정보등록</h1>
+            <h1 class="h_title">마이펫 정보수정</h1>
             <div class="btn_box">
                 <a href="javascript:document.referrer? history.back() : location.href = 'index.html'" class="btn_goback btn_left">
                     <img src="/images/icon-goback-white.svg" alt="" class="icon">
@@ -21,16 +21,19 @@
         </header>
         <div class="main">
             <section class="resister_pet_form_wrap pd_header03">
-                <h2 class="blind">펫 정보등록 폼</h2>
+                <h2 class="blind">펫 정보수정 폼</h2>
                 <form onsubmit="return false;">
                     <!-- 사진 + 이름 -->
                     <div class="pet_profile01">
                         <div class="profile_img has_img">
                             <div class="img_box"><img src="/images/profile-img.jpg" alt="프로필이미지" class="img"></div>
-                            <div class="inp_profile_box">
-                                <span class="lab"><img src="/images/icon-camera-white.svg" alt="카메라아이콘" class="icon"> 프로필이미지</span>
+                            <div class="inp_profile_box inp_has_profile">
+                                <!-- <span class="lab"><img src="/images/icon-camera-white.svg" alt="카메라아이콘" class="icon"> 프로필이미지</span> -->
                                 <input type="file" name="petProfileImg" id="petProfileImg" hidden>
-                                <label for="petProfileImg" class="btn btn_mid btn_main">사진등록하기<img src="/images/icon-angle-right-white.svg" alt=">" class="icon"></label>
+                                <label for="petProfileImg" class="btn btn_linkstyle btn_change_img">
+                                    <!-- 사진변경하기<img src="/images/icon-angle-right-white.svg" alt=">" class="icon"> -->
+                                    <img src="/images/btn_set-img.png" alt="레오 정보 수정하기" class="img">
+                                </label>
                             </div>
                         </div>
                         <div class="inp_box01">
@@ -361,8 +364,8 @@
                                             <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein06" class="inp_check_table" hidden><label for="petAllergyProtein06" class="lab_check_table">말고기</label></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein07" class="inp_check_table" hidden><label for="petAllergyProtein07" class="lab_check_table">캥거루/사슴</label></td>
-                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein08" class="inp_check_table" hidden><label for="petAllergyProtein08" class="lab_check_table">염소/토끼</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein07" class="inp_check_table" hidden><label for="petAllergyProtein07" class="lab_check_table">캥거루/토끼</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein08" class="inp_check_table" hidden><label for="petAllergyProtein08" class="lab_check_table">염소/사슴</label></td>
                                             <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein09" class="inp_check_table" hidden><label for="petAllergyProtein09" class="lab_check_table">연어</label></td>
                                         </tr>
                                         <tr>

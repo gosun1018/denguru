@@ -3291,7 +3291,9 @@ input[type="password"] {
     position: relative;
     width: 48px;
     height: 48px;
-    border-radius: 24px; }
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center; }
     .filter_cate_color_box .color_box:after {
       content: '';
       display: block;
@@ -3313,12 +3315,19 @@ input[type="password"] {
     margin-left: 0; }
   .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_name {
     font-weight: bold; }
-  .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_box {
+  .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(/images/icon-check-white.svg);
     background-size: 40%;
     background-position: center;
     background-repeat: no-repeat; }
-  .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_box02 {
+  .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_box02:before {
     background-image: url(/images/icon-check-pink.svg); }
 
 .loading {
@@ -3343,13 +3352,16 @@ input[type="password"] {
   padding: 32px 16px 0;
   border-bottom: 1px solid #dbdbdb; }
   .pet_profile01 .profile_img {
-    position: relative;
     width: 160px;
     height: 160px;
-    border-radius: 80px;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+    position: relative;
+    margin: 0 auto; }
+    .pet_profile01 .profile_img .img_box {
+      width: 160px;
+      height: 160px;
+      border-radius: 80px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden; }
   .pet_profile01 .inp_profile_box {
     width: 100%;
     position: absolute;
@@ -3364,18 +3376,28 @@ input[type="password"] {
       .pet_profile01 .inp_profile_box .lab .icon {
         width: 1.2em;
         vertical-align: middle; }
+    .pet_profile01 .inp_profile_box.inp_has_profile {
+      width: auto;
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 0; }
   .pet_profile01 .profile_img.has_img .img_box:after {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0; }
   .pet_profile01 .profile_img.has_img .lab {
     color: #fff; }
+  .pet_profile01 .btn_change_img {
+    width: 44px;
+    height: 44px; }
+    .pet_profile01 .btn_change_img .img {
+      width: 100%; }
 
 .pet_profile02 {
   padding: 0 16px;

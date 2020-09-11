@@ -396,6 +396,8 @@
         margin: 0 auto 4px;
         position: relative;
         @include circle(48px);
+        background-size: cover;
+        background-position: center;
 
         &:after {
             content: '';
@@ -423,13 +425,20 @@
         .color_name {
             font-weight: bold;
         }
-        .color_box {
+        .color_box:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url(/images/icon-check-white.svg);
             background-size: 40%;
             background-position: center;
             background-repeat: no-repeat;
         }
-        .color_box02 {
+        .color_box02:before {
             background-image: url(/images/icon-check-pink.svg);
         }
     }
