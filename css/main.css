@@ -316,7 +316,7 @@ select {
   /* 네이티브 외형 감추기 */
   -moz-appearance: none;
   appearance: none;
-  background: url(/images/icon-select-triangle.svg) no-repeat right 50%;
+  background: url(../images/icon-select-triangle.svg) no-repeat right 50%;
   /* 화살표 모양의 이미지 */
   background-size: 12px; }
 
@@ -376,13 +376,13 @@ input[type="password"] {
     display: inline-block;
     padding-left: 26px;
     line-height: 20px;
-    background-image: url(/images/icon-radio-uncheck.svg);
+    background-image: url(../images/icon-radio-uncheck.svg);
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 16px;
     color: #414141; }
   .inp_box01 .inp_radio02:checked + .lab_radio02 {
-    background-image: url(/images/icon-radio-check.svg); }
+    background-image: url(../images/icon-radio-check.svg); }
   .inp_box01 .inp_check_box {
     margin-top: 12px;
     text-align: center; }
@@ -394,14 +394,14 @@ input[type="password"] {
     display: inline-block;
     width: 1.3em;
     height: 1.3em;
-    background-image: url(/images/icon-checkbox.svg);
+    background-image: url(../images/icon-checkbox.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: sub;
     margin-left: 4px; }
   .inp_box01 .inp_check:checked + .lab_checkbox01:after {
-    background-image: url(/images/icon-checkbox-checked.svg); }
+    background-image: url(../images/icon-checkbox-checked.svg); }
   .inp_box01 .lab_checkbox02 {
     font-size: 14px;
     color: #141414; }
@@ -410,14 +410,14 @@ input[type="password"] {
     display: inline-block;
     width: 1.3em;
     height: 1.3em;
-    background-image: url(/images/icon-checkbox-circle.svg);
+    background-image: url(../images/icon-checkbox-circle.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: sub;
     margin-right: 6px; }
   .inp_box01 .inp_check:checked + .lab_checkbox02:before {
-    background-image: url(/images/icon-checkbox-circle-checked.svg); }
+    background-image: url(../images/icon-checkbox-circle-checked.svg); }
   .inp_box01 .inp_date_box {
     display: flex; }
   .inp_box01 .inp_date {
@@ -532,7 +532,7 @@ input[type="password"] {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url(/images/icon-checkbox.svg);
+  background-image: url(../images/icon-checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -540,7 +540,7 @@ input[type="password"] {
   margin-right: 4px; }
 
 .inp_box03 .inp_check:checked + .lab_checkbox01:before {
-  background-image: url(/images/icon-checkbox-checked.svg); }
+  background-image: url(../images/icon-checkbox-checked.svg); }
 
 .inp_box04 .inp_txt_box {
   display: flex;
@@ -611,7 +611,7 @@ input[type="password"] {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-image: url(/images/icon-checkbox-circle.svg);
+  background-image: url(../images/icon-checkbox-circle.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -619,7 +619,7 @@ input[type="password"] {
   margin-right: 4px; }
 
 .inp_box04 .inp_check:checked + .lab_checkbox01:before {
-  background-image: url(/images/icon-checkbox-circle-checked.svg); }
+  background-image: url(../images/icon-checkbox-circle-checked.svg); }
 
 .inp_box04 .lab_checkbox02 {
   display: flex;
@@ -633,7 +633,7 @@ input[type="password"] {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
-  background-image: url(/images/icon-checkbox.svg);
+  background-image: url(../images/icon-checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -641,7 +641,7 @@ input[type="password"] {
   margin-right: 6px; }
 
 .inp_box04 .inp_check:checked + .lab_checkbox02:before {
-  background-image: url(/images/icon-checkbox-checked.svg); }
+  background-image: url(../images/icon-checkbox-checked.svg); }
 
 .inp_box04 .authentication_time {
   font-size: 13px;
@@ -1120,7 +1120,7 @@ input[type="password"] {
   color: #414141;
   border: 1px solid #cac2de; }
   .popover_main.popover_right_top:before {
-    background-image: url(/images/popover-triangle-main.png); }
+    background-image: url(../images/popover-triangle-main.png); }
 
 .popover_right_top {
   top: calc(100% + 6px);
@@ -1256,13 +1256,13 @@ input[type="password"] {
     background-color: transparent;
     box-shadow: none; }
     .header01.main_transparent .h_logo_box {
-      background-image: url(/images/h_logo_white.png); }
+      background-image: url(../images/h_logo_white.png); }
     .header01.main_transparent .h_logo {
       opacity: 0; }
     .header01.main_transparent .h_search_box {
       background-color: rgba(243, 241, 246, 0.8); }
     .header01.main_transparent .h_btn {
-      background-image: url(/images/icon-bell-white.svg);
+      background-image: url(../images/icon-bell-white.svg);
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center 0; }
@@ -1757,7 +1757,7 @@ input[type="password"] {
     appearance: none;
     font-size: 13px;
     color: #414141;
-    background: url(/images/icon-sort.svg) no-repeat 0 50%;
+    background: url(../images/icon-sort.svg) no-repeat 0 50%;
     background-size: contain;
     border: none; }
 
@@ -2852,7 +2852,7 @@ input[type="password"] {
   width: 100%;
   padding-top: 4.03%;
   background-color: #fff;
-  background-image: url(/images/bg-profile.png);
+  background-image: url(../images/bg-profile.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center top; }
@@ -3266,7 +3266,7 @@ input[type="password"] {
       margin-left: 16px;
       width: 1.286em;
       height: 1.286em;
-      background-image: url(/images/icon-checkbox-circle.svg);
+      background-image: url(../images/icon-checkbox-circle.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -3275,7 +3275,7 @@ input[type="password"] {
   .filter_cate_container .filter_cate_small .inp_blind:checked + .lab_checkbox {
     background-color: #f3f1f6; }
     .filter_cate_container .filter_cate_small .inp_blind:checked + .lab_checkbox:before {
-      background-image: url(/images/icon-checkbox-circle-checked.svg); }
+      background-image: url(../images/icon-checkbox-circle-checked.svg); }
 
 .filter_cate_color_box {
   padding: 16px;
@@ -3323,12 +3323,12 @@ input[type="password"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/images/icon-check-white.svg);
+    background-image: url(../images/icon-check-white.svg);
     background-size: 40%;
     background-position: center;
     background-repeat: no-repeat; }
   .filter_cate_color_box .inp_blind:checked + .lab_checkbox .color_box02:before {
-    background-image: url(/images/icon-check-pink.svg); }
+    background-image: url(../images/icon-check-pink.svg); }
 
 .loading {
   position: absolute;
@@ -3728,7 +3728,7 @@ input[type="password"] {
     /* 네이티브 외형 감추기 */
     -moz-appearance: none;
     appearance: none;
-    background: url(/images/icon-sort.svg) no-repeat 0 50%;
+    background: url(../images/icon-sort.svg) no-repeat 0 50%;
     background-size: contain;
     border: none; }
   .filter_bar_container .filter_bar_switch_box {
@@ -5294,13 +5294,13 @@ input[type="password"] {
       position: absolute;
       top: 4px;
       left: 4px;
-      background-image: url(/images/icon-checkbox-circle.svg);
+      background-image: url(../images/icon-checkbox-circle.svg);
       background-repeat: no-repeat;
       background-size: contain; }
   .pick_inp_check_box .inp_check:checked + .lab_check {
     background-color: rgba(121, 83, 208, 0.2); }
     .pick_inp_check_box .inp_check:checked + .lab_check:before {
-      background-image: url(/images/icon-checkbox-circle-checked.svg); }
+      background-image: url(../images/icon-checkbox-circle-checked.svg); }
 
 .recommand_password_container {
   flex: 1;

@@ -106,7 +106,7 @@
             position: absolute;
             top: 4px;
             left: 4px;
-            background-image: url(/images/icon-checkbox-circle.svg);
+            background-image: url(../images/icon-checkbox-circle.svg);
             background-repeat: no-repeat;
             background-size: contain;
         }
@@ -115,7 +115,7 @@
         background-color: rgba($main-color,0.2);
 
         &:before {
-            background-image: url(/images/icon-checkbox-circle-checked.svg);
+            background-image: url(../images/icon-checkbox-circle-checked.svg);
         }
     }
 }

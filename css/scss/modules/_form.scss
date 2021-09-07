@@ -7,7 +7,7 @@ select {
     -webkit-appearance: none;  /* 네이티브 외형 감추기 */
     -moz-appearance: none;
     appearance: none;
-    background: url(/images/icon-select-triangle.svg) no-repeat right 50%;  /* 화살표 모양의 이미지 */
+    background: url(../images/icon-select-triangle.svg) no-repeat right 50%;  /* 화살표 모양의 이미지 */
     background-size: 12px;
 }
 /* IE 10, 11의 네이티브 화살표 숨기기 */
@@ -79,14 +79,14 @@ input[type="password"] {
         display: inline-block;
         padding-left: 26px;
         line-height: 20px;
-        background-image: url(/images/icon-radio-uncheck.svg);
+        background-image: url(../images/icon-radio-uncheck.svg);
         background-size: contain;
         background-repeat: no-repeat;
         font-size: $large-font-size;
         color: $base-font-color;
     }
     .inp_radio02:checked + .lab_radio02 {
-        background-image: url(/images/icon-radio-check.svg);
+        background-image: url(../images/icon-radio-check.svg);
     }
     .inp_check_box {
         margin-top: 12px;
@@ -101,7 +101,7 @@ input[type="password"] {
         display: inline-block;
         width: 1.3em;
         height: 1.3em;
-        background-image: url(/images/icon-checkbox.svg);
+        background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -109,7 +109,7 @@ input[type="password"] {
         margin-left: 4px;
     }
     .inp_check:checked + .lab_checkbox01:after {
-        background-image: url(/images/icon-checkbox-checked.svg);
+        background-image: url(../images/icon-checkbox-checked.svg);
     }
     .lab_checkbox02 {
         font-size: $base-font-size;
@@ -120,7 +120,7 @@ input[type="password"] {
         display: inline-block;
         width: 1.3em;
         height: 1.3em;
-        background-image: url(/images/icon-checkbox-circle.svg);
+        background-image: url(../images/icon-checkbox-circle.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -128,7 +128,7 @@ input[type="password"] {
         margin-right: 6px;
     }
     .inp_check:checked + .lab_checkbox02:before {
-        background-image: url(/images/icon-checkbox-circle-checked.svg);
+        background-image: url(../images/icon-checkbox-circle-checked.svg);
     }
     .inp_date_box {
         display: flex;
@@ -275,7 +275,7 @@ input[type="password"] {
         display: inline-block;
         width: $layout-base-padding;
         height: $layout-base-padding;
-        background-image: url(/images/icon-checkbox.svg);
+        background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -283,7 +283,7 @@ input[type="password"] {
         margin-right: 4px;
     }
     .inp_check:checked + .lab_checkbox01:before {
-        background-image: url(/images/icon-checkbox-checked.svg);
+        background-image: url(../images/icon-checkbox-checked.svg);
     }
 }
 .inp_box04 {
@@ -373,7 +373,7 @@ input[type="password"] {
         display: inline-block;
         width: 18px;
         height: 18px;
-        background-image: url(/images/icon-checkbox-circle.svg);
+        background-image: url(../images/icon-checkbox-circle.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -381,7 +381,7 @@ input[type="password"] {
         margin-right: 4px;
     }
     .inp_check:checked + .lab_checkbox01:before {
-        background-image: url(/images/icon-checkbox-circle-checked.svg);
+        background-image: url(../images/icon-checkbox-circle-checked.svg);
     }
     .lab_checkbox02 {
         display: flex;
@@ -395,7 +395,7 @@ input[type="password"] {
         flex-shrink: 0;
         width: 16px;
         height: 16px;
-        background-image: url(/images/icon-checkbox.svg);
+        background-image: url(../images/icon-checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -403,7 +403,7 @@ input[type="password"] {
         margin-right: 6px;
     }
     .inp_check:checked + .lab_checkbox02:before {
-        background-image: url(/images/icon-checkbox-checked.svg);
+        background-image: url(../images/icon-checkbox-checked.svg);
     }
     .authentication_time {
         font-size: $mid-font-size;

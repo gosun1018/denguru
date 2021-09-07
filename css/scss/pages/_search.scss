@@ -364,7 +364,7 @@
                 margin-left: $layout-base-padding;
                 width: 1.286em;
                 height: 1.286em;
-                background-image: url(/images/icon-checkbox-circle.svg);
+                background-image: url(../images/icon-checkbox-circle.svg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -376,7 +376,7 @@
             background-color: $bg-gray-color;
 
             &:before {
-                background-image: url(/images/icon-checkbox-circle-checked.svg);
+                background-image: url(../images/icon-checkbox-circle-checked.svg);
             }
         }
     }
@@ -433,13 +433,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url(/images/icon-check-white.svg);
+            background-image: url(../images/icon-check-white.svg);
             background-size: 40%;
             background-position: center;
             background-repeat: no-repeat;
         }
         .color_box02:before {
-            background-image: url(/images/icon-check-pink.svg);
+            background-image: url(../images/icon-check-pink.svg);
         }
     }
 }
