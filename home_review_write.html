@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DENGURU :: 리뷰쓰기</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -15,7 +15,7 @@
             <h1 class="h_title">리뷰쓰기</h1>
             <div class="btn_box">
                 <a href="javascript:document.referrer? history.back() : location.href = 'home_review_item.html'" class="btn_goback btn_left">
-                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                    <img src="images/icon-goback.svg" alt="이전페이지" class="icon">
                 </a>
                 <button onclick="location.href = 'home_review_item.html'" class="btn btn_linkstyle_main btn_right btn_submit">등 록</button>
             </div>
@@ -23,7 +23,7 @@
         <div class="main">
             <div class="pd_header03"></div>
             <div class="btn_box top_msg01">
-                <button class="btn btn_linkstyle btn_right" onclick="openPopup('popupReviewStandard')">리뷰작성 전에 확인하세요<img src="/images/icon-angle-right-white.svg" alt=">" class="icon"></button>
+                <button class="btn btn_linkstyle btn_right" onclick="openPopup('popupReviewStandard')">리뷰작성 전에 확인하세요<img src="images/icon-angle-right-white.svg" alt=">" class="icon"></button>
             </div>
             <section class="review_write_item_container">
                 <h2 class="blind">리뷰상품선택</h2>
@@ -42,31 +42,31 @@
                     <div class="review_star_lab">평점을 선택해주세요</div>
                     <div class="stars_container">
                         <a class="star">
-                            <img src="/images/icon-star-o.svg" alt="별" class="icon star_o">
-                            <img src="/images/icon-star.svg" alt="별" class="icon star_full">
+                            <img src="images/icon-star-o.svg" alt="별" class="icon star_o">
+                            <img src="images/icon-star.svg" alt="별" class="icon star_full">
                         </a>
                         <a class="star">
-                            <img src="/images/icon-star-o.svg" alt="별" class="icon star_o">
-                            <img src="/images/icon-star.svg" alt="별" class="icon star_full">
+                            <img src="images/icon-star-o.svg" alt="별" class="icon star_o">
+                            <img src="images/icon-star.svg" alt="별" class="icon star_full">
                         </a>
                         <a class="star">
-                            <img src="/images/icon-star-o.svg" alt="별" class="icon star_o">
-                            <img src="/images/icon-star.svg" alt="별" class="icon star_full">
+                            <img src="images/icon-star-o.svg" alt="별" class="icon star_o">
+                            <img src="images/icon-star.svg" alt="별" class="icon star_full">
                         </a>
                         <a class="star">
-                            <img src="/images/icon-star-o.svg" alt="별" class="icon star_o">
-                            <img src="/images/icon-star.svg" alt="별" class="icon star_full">
+                            <img src="images/icon-star-o.svg" alt="별" class="icon star_o">
+                            <img src="images/icon-star.svg" alt="별" class="icon star_full">
                         </a>
                         <a class="star">
-                            <img src="/images/icon-star-o.svg" alt="별" class="icon star_o">
-                            <img src="/images/icon-star.svg" alt="별" class="icon star_full">
+                            <img src="images/icon-star-o.svg" alt="별" class="icon star_o">
+                            <img src="images/icon-star.svg" alt="별" class="icon star_full">
                         </a>
                     </div>
                 </div>
                 <div class="inp_review_txt_contianer">
                     <div class="inp_box02">
                         <div class="lab_box">
-                            <label for="reviewGood" class="lab"><img src="/images/icon-review-good.svg" alt="" class="lab_icon">좋았던 점</label>
+                            <label for="reviewGood" class="lab"><img src="images/icon-review-good.svg" alt="" class="lab_icon">좋았던 점</label>
                             <span class="lab_noti01">(최소 20자 이상)</span>
                         </div>
                         <div class="inp_box">
@@ -75,7 +75,7 @@
                     </div>
                     <div class="inp_box02">
                         <div class="lab_box">
-                            <label for="reviewBad" class="lab"><img src="/images/icon-review-bad.svg" alt="" class="lab_icon">아쉬운 점</label>
+                            <label for="reviewBad" class="lab"><img src="images/icon-review-bad.svg" alt="" class="lab_icon">아쉬운 점</label>
                             <span class="lab_noti01">(최소 20자 이상)</span>
                         </div>
                         <div class="inp_box">
@@ -84,7 +84,7 @@
                     </div>
                     <div class="inp_box02">
                         <div class="lab_box">
-                            <label for="reviewTip" class="lab"><img src="/images/icon-review-tip.svg" alt="" class="lab_icon">나만의 팁</label>
+                            <label for="reviewTip" class="lab"><img src="images/icon-review-tip.svg" alt="" class="lab_icon">나만의 팁</label>
                             <span class="lab_noti01">(선택)</span>
                         </div>
                         <div class="inp_box">
@@ -95,7 +95,7 @@
                 <div class="inp_review_img_contianer">
                     <div class="btn_box">
                         <button class="btn btn_main_line btn_full" type="button">
-                            <img src="/images/icon-camera-main.svg" alt="" class="icon">
+                            <img src="images/icon-camera-main.svg" alt="" class="icon">
                             사진, 동영상 첨부하기
                         </button>
                     </div>
@@ -103,23 +103,23 @@
                         <div class="review_img_list swiper-wrapper">
                             <div class="review_img_thum img_box swiper-slide" id="review_img01">
                                 <img src="http://placehold.it/97x97" alt="이미지 파일명" class="img">
-                                <button class="btn_del_img btn_linkstyle"><img src="/images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
+                                <button class="btn_del_img btn_linkstyle"><img src="images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
                             </div>
                             <div class="review_img_thum img_box swiper-slide" id="review_img02">
                                 <img src="http://placehold.it/97x97" alt="이미지 파일명" class="img">
-                                <button class="btn_del_img btn_linkstyle"><img src="/images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
+                                <button class="btn_del_img btn_linkstyle"><img src="images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
                             </div>
                             <div class="review_img_thum img_box swiper-slide" id="review_img03">
                                 <img src="http://placehold.it/97x97" alt="이미지 파일명" class="img">
-                                <button class="btn_del_img btn_linkstyle"><img src="/images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
+                                <button class="btn_del_img btn_linkstyle"><img src="images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
                             </div>
                             <div class="review_img_thum img_box swiper-slide" id="review_img04">
                                 <img src="http://placehold.it/97x97" alt="이미지 파일명" class="img">
-                                <button class="btn_del_img btn_linkstyle"><img src="/images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
+                                <button class="btn_del_img btn_linkstyle"><img src="images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
                             </div>
                             <div class="review_img_thum img_box swiper-slide" id="review_img05">
                                 <img src="http://placehold.it/97x97" alt="이미지 파일명" class="img">
-                                <button class="btn_del_img btn_linkstyle"><img src="/images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
+                                <button class="btn_del_img btn_linkstyle"><img src="images/icon-del.svg" alt="이미지 파일명 빼기" class="icon"></button>
                             </div>
                         </div>
                     </div>
@@ -133,15 +133,15 @@
                 </div>
                 <ul class="review_example_list">
                     <li class="review_example_item">
-                        <div class="img_box"><img src="/images/review_example01.png" alt="사용샷" class="img"></div>
+                        <div class="img_box"><img src="images/review_example01.png" alt="사용샷" class="img"></div>
                         <div class="review_example_txt">사용샷</div>
                     </li>
                     <li class="review_example_item">
-                        <div class="img_box"><img src="/images/review_example02.png" alt="제품구성" class="img"></div>
+                        <div class="img_box"><img src="images/review_example02.png" alt="제품구성" class="img"></div>
                         <div class="review_example_txt">제품구성</div>
                     </li>
                     <li class="review_example_item">
-                        <div class="img_box"><img src="/images/review_example03.png" alt="디테일" class="img"></div>
+                        <div class="img_box"><img src="images/review_example03.png" alt="디테일" class="img"></div>
                         <div class="review_example_txt">디테일</div>
                     </li>
                 </ul>
